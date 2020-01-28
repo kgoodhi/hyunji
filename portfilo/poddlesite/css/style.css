@@ -1,0 +1,227 @@
+@charset "utf-8";
+
+
+#wrap{ width:100%; }
+
+/*header*/
+header>nav{ 
+  position: fixed; 
+  right:20px; 
+  bottom:25%;
+  z-index:1000; }
+
+  nav>ul>li{ width: 24px; margin-bottom:10px; }
+  nav>ul>li>a{ 
+    display: block;
+    height: 24px;
+    text-indent:-9999px; 
+    background-image: url(../images/circular.png);
+    background-repeat: no-repeat; }
+
+  nav>ul>li:hover>a{
+    background-image: url(../images/smiley.png); 
+   }
+  
+/*section 설정*/
+section{ width:100%; position: relative; top:-1000px; }
+section>article{ 
+  overflow: hidden; 
+  width: 1200px; 
+  margin:0 auto;
+  height: 1000px; }
+
+.main_bg{ height:500px; background-color: #fff; }
+
+/*section - main*/  
+.main{ position: relative; }
+
+.main>h1{
+  position: absolute;
+  right:-270px;
+  bottom:40%;
+  transform:translateX(-50%); 
+  width:807px;
+  height:156px; 
+  background-image: url(../images/mainlogo.png); 
+  text-indent:-9999px; 
+  background-repeat:no-repeat; }
+
+section>.main>p{ 
+  position: absolute; 
+  left:7%; bottom:10px;
+  width: 827px;
+  height: 417px;
+  background-image: url(../images/main_2.png); 
+  text-indent:-9999px; }
+
+/*section - history*/
+.history{ margin-top:90px; }
+.history>div{ width: 826px; margin:0 auto; }
+
+.history>h2{ 
+  width: 744px; height: 124px; 
+  margin:100px auto;
+  text-indent:-9999px; 
+  background-image: url(../images/historylogo.png); }
+
+.history>div>.ulslid{ 
+  position: relative;
+  float:left;
+  width: 616px;
+  overflow: hidden; }
+
+.history>div>.ulslid>.his_ph{ 
+  position: relative; 
+  width:1848px; }
+.history>div>.ulslid>.his_ph>li{ 
+  float:left;  width: 616px; }
+.history>div>.ulslid>.his_ph>li>a>img{ 
+  display: block; 
+  width: 616px;
+  height: 410px; }
+.history>p{
+  margin-top:40px;
+  text-align: center; }
+
+
+.history>div>.his_sub{ float:right; }
+.history>div>.his_sub>li{
+  height: 130px; 
+  margin-bottom:10px; }
+.history>div>.his_sub>li:last-child{
+  margin-bottom:0; }
+.history>div>.his_sub>li>a>img{
+  width:200px; 
+  height: 130px; }
+
+
+/*section - type*/
+.bg_1{
+  position: relative; 
+  top:1800px;
+  width: 100%;
+  height:400px; 
+  background-image: url(../images/type_bg.gif); }
+
+.type { margin-top:90px; height:900px;}
+
+.type>h2{
+  width: 416px; 
+  height: 121px;
+  margin:0 auto; 
+  background-image: url(../images/typelogo.png); 
+  text-indent:-9999px; }
+
+.type>.bg{ margin-top:80px;}
+.type>.bg>ol{ width:1830px; margin:0 auto;}
+.type>.bg>ol>li{ 
+  position: relative;
+  width:400px; 
+  float:left; }
+.type>.bg>ol>li>p{
+  position: absolute;
+  top:120px; 
+  width:150px;
+  right:20px; }
+.type>.bg>ol>li>a>span>img{ 
+  width: 230px; 
+  transform:scale(1);
+  transition:all 0.4s; }
+.type>.bg>ol>li>a:hover>span>img{
+  transform:scale(1.1); }
+.type>.bg>ol>li:nth-child(1)>a>span>img{
+  margin-top:50px; }
+.type>.bg>ol>li:nth-child(2)>a>span>img{
+  margin-top:85px;
+  margin-left:10px; }
+.type>.bg>ol>li:nth-child(3)>a>span>img{
+  margin-top:120px; }
+.type>.bg>ol>li:nth-child(3)>p{right:50px;}
+
+/*section - chara*/
+.chara{
+  position: relative;
+  top: 0; }
+.chara>h2{
+  position:absolute; 
+  left:50%;
+  top:50px; 
+  transform: translate(-50%);
+  width: 1024px; 
+  height: 124px; 
+  background-image: url(../images/chlogo.png); 
+  background-repeat: no-repeat;
+  text-indent:-9999px; }
+
+.chara{
+  width: 100%;
+  height: 1000px;
+  background-image: url(../images/cha_bg1.png);
+  background-repeat: no-repeat;
+  background-size: cover;  }
+.chara>p{ 
+  text-align: center;
+  margin-top:400px; }
+
+/*section - health*/
+.health>h2{ 
+  width: 700px;
+  height: 120px; 
+  margin:100px auto;
+  background-image: url(../images/healthlogo.png);
+  background-repeat: no-repeat; 
+  text-indent:-9999px; }
+
+.health>.slid>ul{ 
+  width:1260px;
+  margin:0 auto; }
+.health>.slid>ul>li{
+  float:left; 
+  width:380px;
+  margin:10px; }
+.health>.slid>ul>li>img{
+  width:380px;
+  height:280px;
+  border-radius:30px;}
+.health>p{
+  margin-top:40px;
+  text-align: center; }
+
+/*section - note*/
+.note{ position: relative; }
+
+.note>h2{
+  width: 430px; height: 124px; 
+  margin:50px auto;
+  background-image: url(../images/notelogo.png);
+  text-indent:-9999px; }
+
+.note>.video{
+  position: absolute; 
+  top:250px; 
+  left:50%; 
+  transform: translate(-50%);
+  width: 800px; }
+
+.note>.video>video{ 
+  width:900px;
+  height:600px; 
+}
+.note>p{ 
+  margin-top:50px;
+  text-align: center; }
+.note>.bg_2>{
+  position: absolute; 
+  right:0; top:00px; 
+  width:400px;
+  height:616px; }
+
+footer{ 
+  width: 100%;
+  margin-top:-900px;
+  background-color: #649cce; }
+
+footer>address{ 
+  height: 80px; 
+  line-height: 80px; 
+  text-align: center; }
