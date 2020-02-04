@@ -124,14 +124,14 @@ html,body{
 .aboutme>.menubtn>.btn>p>a{
   display: block; 
   color:#edd1e1; 
-  font-size:65px; 
+  font-size:70px; 
   font-weight:800;
   text-align:right;
   text-shadow:3px 3px #976b84; }
 
 .aboutme>.menubtn>.btn>p.click>a,
 .aboutme>.menubtn>.btn>p>a:hover{ color:#5a3f4e; }
-.aboutme>.menubtn>.btn>.btn01>a{ font-size:85px; }
+.aboutme>.menubtn>.btn>.btn01>a{ font-size:90px; }
 .aboutme>.menubtn>.btn>p>a>img{ width:49px; height:49px; }
 
 /*con tab*/
@@ -385,9 +385,14 @@ html,body{
 
   .other_btn>.hoom>a>img{ width:49px; height:49px; }  
 
+  .port_tab>.portalltab>.other_tab{
+    position: absolute;
+    left:50%; 
+    transform:translateX(-50%);
+}
   .port_tab{ 
     position: absolute; right:25px; top:60%;
-    opacity:0; 
+    opacity:0;
     transition-duration:1.5s;
     transform:translateY(-50%); width:60% }
 
@@ -399,10 +404,12 @@ html,body{
 
   .port_tab>.portalltab>div{ 
     display:none;
-    position: absolute; left:50%; top:6%; 
+    position: absolute; left:38%; top:6%; 
     transform: translateX(-50%); 
     width:900px; height:150px; 
     background-repeat:no-repeat; }
+
+
 
   .port_tab>.portalltab>div>img{ width: 100%; height:530px;}
   .port_tab>.portalltab>div{ height: 600px; }
@@ -416,49 +423,48 @@ html,body{
 
 /*tab 안에 있는 글씨*/
 
-  .txt>p{ position:absolute; top:8%; right:-60px; 
+  .txt>p{ position:absolute; 
+          top:0%; right:-180px; 
           display:block;
           text-align: center; }
 
   .txt>p>strong{ color:#5a3f4e;
                  font-size:60px;
                  text-shadow:2px 3px #b297a5; }
-
-  .txt>p>span{ color:#555; font-size:20px;}
-
-/*푸들 탭 글씨*/
-
-  .txt>p.pootxt{ 
-    position:absolute; top:8%; right:0px; 
-    display:block;
-    text-align: center; }
-
-
+  .txt>p>.st{ 
+    font-size: 18px;}
+  .txt>p>span{font-size:16px;}
 
 
 /*view, pro 버튼*/
 
 .preview{ 
-  position: absolute; left:50%; bottom:0; 
+  position: absolute; left:67%; bottom:0; 
   transform:translateX(-50%);
-  font-weight:bold; }
+  font-weight:bold; 
+}
  
-.tab>.preview p{ float:left; margin-right:70px; }
+.tab>.preview p{ float:left; margin-right:60px; }
 .tab>.preview p:last-child{ margin-right:0; }
 
 .tab>.preview p>a{ 
   display: block;
+  padding:5px;
   color:#fff;
-  font-size:40px;                
+  font-size:35px;                
   text-align: center;
   text-shadow:3px 3px #7e6873; 
-  transition-duration:0.5s; }
+  transition-duration:0.5s; 
+  border:2px solid #fff;
+  border-radius:30px;}
 
 .tab>.preview p:hover>a{ color:#5a3f4e; transform:scale(1.2);}
 
 .tab>.preview p>a>i{font-size:40px;}
  
-
+.caview, .baproc{
+  width: 200px;
+  text-align: center;}
 
 
 /*-------------강아지 마우스------------*/
