@@ -423,8 +423,8 @@ html,body{
 
 /*tab 안에 있는 글씨*/
 
-  .txt>p{ position:absolute; 
-          top:0%; right:-180px; 
+  .txt>p{ position:absolute;
+          top:0%; right:-22%; 
           display:block;
           text-align: center; }
 
