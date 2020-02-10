@@ -18,13 +18,17 @@ html,body{background-color:#f3ede2; height: 100%; }
 
 .gnb>li>a{font-size:18px; font-weight:bold; text-align: center;}
 .sub_menu>li>a{font-size:15px; font-weight:bold; text-align: center;}
-.con>p{ padding-bottom: 40px; font-size: 1.2em; text-align: center; }
+
+.con>p{ padding-bottom: 40px; font-size: 1.3em; text-align: center; }
+th>a{font-size: 13px;}
 h1{ font-size:2.3em; }
 h2{ margin-bottom:10px; font-size:1.8em; text-align: center; }
-h3{ margin:15% 0 6%;  font-size:1.4em; text-align: center;}
-section>p{}
-.info>div>p{font-size: 1.1em;}
-
+h3{ margin:45px 0 10px; font-size:1.6em; text-align: center;}
+h4{ font-size: 1.4em; text-align: center;}
+td{font-size: 12px;}
+.info>div>p{ font-size: 1.1em;}
+.container>.info_t>p{margin-left:30px;font-size: 1.2em;}
+.container>.info_t>p>span{font-size: 1.4em;}
 strong{color:#fff; font-size:1.5em; text-align: center;}
 .cont2>.container>ul>li>a>span>p{font-size: 1.2em; color:#fff;}
 
@@ -217,16 +221,26 @@ header{
   transform:translateX(-50%);
   padding:8px;
   border:1px solid black;
+  border-radius:5px;
   transition:0.4s;
 }
 
-.go:hover{background-color:#ccc;}
+.go:hover{background-color:#fff;}
 
-.go>i{ margin-left:5px; }
+i{ margin-left:5px; }
 
 .info>.in_1{
+    position: relative;
     width: 50%;
-    background-color: #e9e3dd;
+    background-image: url(../images/in_1bg.jpg);
+    background-position: center center;
+}
+.info>.in_1>img{
+  position: absolute;
+  left: 30px;
+  top:30px;
+  width: 225px;
+  height: 100px;
 }
 .info>.in_2{
     background-color:#9e624c;
@@ -243,10 +257,45 @@ header{
     background-image: url(../images/pointer.png);
 }
  .info>.in_6{
-    width: 50%;   
-    background-color:#e9e3dd;
+   width: 50%;
+   background-color:#e9e3dd;   
 }
-  
+.info>.in_6>h3{
+  display: inline-block;
+  padding:0 80px 0px 60px;
+}
+.info>.in_6>a{
+  float:right;
+  margin:50px 60px 0 0px;
+}
+.info>.in_6 table{
+  margin:0 auto;
+}   
+
+tbody>tr:first-child{ 
+  border-top:1px solid #ccc;
+}
+
+tbody>tr{
+  position: relative;
+  display: block;
+  width:545px;
+  height:35px;
+  padding-left:10px;
+  line-height:35px;
+  border-bottom:1px solid #ccc;
+
+}
+
+tbody>tr:hover a{
+    text-decoration: underline;
+}
+td{
+  position: absolute;
+  right:30px;
+  top: 0;
+  width: 50px;
+}
 /*---------------- 사업소개 ------------------*/
 
 .cont2{
@@ -254,8 +303,6 @@ header{
   padding:30px 0 40px;
   background-color:#d1c1b1;
 }
-
-
 .cont2>.container>ul>li{
   float:left;
   width: 31.33%;
@@ -307,6 +354,7 @@ header{
   color:#fff;
   font-style: normal;
   border:1px solid #fff;
+  border-radius:5px;
 }
 
 
@@ -367,70 +415,82 @@ header{
 }
 
 .dot>li.onn{
-    width: 20px;
+  width: 20px;
   height: 20px;
-  background-color:#59665c;
+  background-color:#9e624c;
 }
 
 
 /*---------------- 고객지원 ------------------*/
 
 .cont4{
-
+ width: 1000px;
+}
+.cont4 div{
+  position: relative;
+  height:260px;
+  margin:20px auto;
+  margin-right:10px;  
+}
+.container>.info_t{
+  float:left;
+  width:580px; 
+  background-image: url(../images/banner.jpg);
 }
 
-.container4{
-  width: 1280px;
-  height:280px;
-  margin:80px auto;
-  background-color:#e9e3dd;
-}
-.container4>.info_t{
-  width:58%;  float:left;
-  height: 280px;
-  background-color: #d1c1b1;
-}
-.container4>.info_qc{
-
-
-}
-.container4>.info_qc>.info_q{
-  width: 20%; background-color;
-}
-.container4>.info_qc>.info_c{
-  
+.container>.info_t>h4{
+  padding:28px 30px 15px;
+  text-align:left;
 }
 
+.container>.info_q{
+  float:left;
+  width:200px;
+  background-color:#e9e3dd; 
+  border-radius:40px 0 40px 0;
+}
+
+.container>div>a>img{
+  position: absolute;
+  left: 50%;
+  margin-left:-36px;
+  width:72px;
+  height:72px;
+}
+.icon>img{ margin-top:60px; }
+.infoqc{
+  margin-top:75%;
+}
+.container>.info_c{
+  float:left;
+  width: 200px;
+  border-radius:40px 0 40px 0;
+  background-color: #d1c1b1;  
+}
 
  
 /*--------------footer--------------*/
 footer{
   position: relative; 
-  height:200px; 
-  background-color:#ccc; 
-  font-size:16px;
+  height:150px; 
+  background-color:#e9e3dd; 
+  margin-top:150px;  
 }
 
-address{
-  padding-top:50px;
-  text-align: center;
-  }
-
-
-footer>.f_info img{
-  position: absolute;
-  top:50px; 
-  left:26%; 
-  background-repeat:no-repeat; 
-  transform:translateX(-30%);
+footer>.f_info{
+  width: 1280px;
+  border: 1px solid black;
+  margin:10px auto;
 }
-.qr{
-  position: absolute; 
-  right:30%; 
-  top:50px;
-  width: 68px;
-  height: 68px; }
-
+footer>.f_info>img{
+  width: 118px;
+  height: 60px;
+}
+footer>.f_info>address{
+  display:inline-block;
+  width:400px;
+  margin:0 auto;
+}
 
 /*-----------------------------미디어쿼리-------------------------------*/
 
