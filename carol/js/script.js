@@ -51,7 +51,7 @@ $(document).ready(function(){
       $(".slide_btn .bottom").show();
      }
    
- }//btn 끝
+ }
   
   $(".slide_btn .top").click(function(){
     if(n>0){

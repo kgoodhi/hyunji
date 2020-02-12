@@ -7,6 +7,18 @@ $(document).ready(function(){
 
     });
   
+     //마우스 강아지
+    $(window).mousemove(function(a){
+      var xx=a.pageX;
+      var yy=a.pageY;
+
+      $(".pos_x").text(xx);
+      $(".pos_y").text(yy);
+      $("#box").css({left:xx+15,top:yy+15});
+
+    });
+  
+  
   //페이지 전환  
     $(".m_btn>.left").click(function(){
       $("#container").animate({marginLeft:"0"});
@@ -66,9 +78,9 @@ $(document).ready(function(){
           $("#skills>.stick").css({top:'70%',opacity:0});
         }
         if($(".btn02").hasClass("click")){
-          $(".skill_text").stop().animate({top:"24%",opacity:1},1500);
+          $(".skill_text").stop().animate({top:"18%",opacity:1},1500);
         }else{
-          $(".skill_text").css({top:'34%',opacity:0});
+          $(".skill_text").css({top:"18%",opacity:0});
         }        
         
         if($(".btn04").hasClass("click")){
@@ -89,40 +101,9 @@ $(document).ready(function(){
       });
   
   //experience 슬라이드
-  
-  m=0;
-  
-    var num=$("#img_wrap>img").length;
-  
-      $(".btn_right").hide();
+   
 
- 
-      $(".btn_left").click(function(){
-        if(m<num-3){
-          m++;
-          var move=m*-295;
-          $("#img_wrap").stop().animate({left:move},300);
-        }else{
-         m=0;
-         $("#img_wrap").stop().animate({left:0},300);
-        }
-    
-        if(num>=4){
-          $(".btn_right").show();
-        }else{
-          $(".btn_right").hide();
-        }
-      });
   
-      $(".btn_right").click(function(){
-        if(m>0){
-          m--;
-          var move=m*295;
-          $("#img_wrap").stop().animate({left:m*-295},300);
-        }else{
-          false
-        }   
-      });
   
   //home 버튼 누르면 main으로 이동
       $(".btn05").click(function(){
@@ -134,15 +115,6 @@ $(document).ready(function(){
       
       });
   
-   //마우스 강아지
-    $(window).mousemove(function(a){
-      var xx=a.pageX;
-      var yy=a.pageY;
 
-      $(".pos_x").text(xx);
-      $(".pos_y").text(yy);
-      $("#box").css({left:xx+15,top:yy+15});
-
-    });
   
 });//도큐먼트끝
