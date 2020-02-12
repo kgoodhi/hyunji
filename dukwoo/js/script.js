@@ -43,7 +43,7 @@ $(document).ready(function(){
   });
   
  $(window).resize(function(){
-   if($(window).width()>=1230){
+   if($(window).width()>=1024){
      $(".btn").hide();
      $(".fr").css({right:"-100%"})
    }
