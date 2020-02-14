@@ -16,25 +16,27 @@ html,body{background-color:#f3ede2; height: 100%; }
 
 /* 서체 */
 
+h1{ font-size:2.3em; }
+h2{ margin-bottom:10px; font-size:1.8em; text-align: center; }
+h3{ margin:45px 0 10px; font-size:1.6em; text-align: center;}
+h4{ font-size: 1.4em; text-align: center;}
+td{font-size: 12px; }
+strong{color:#fff; font-size:1.5em; text-align: center;}
+
 .gnb>li>a{font-size:18px; font-weight:bold; text-align: center;}
 .sub_menu>li>a{font-size:15px; font-weight:bold; text-align: center;}
 
 .con>p{ padding-bottom: 40px; font-size: 1.3em; text-align: center; }
 th>a{font-size: 13px;}
-h1{ font-size:2.3em; }
-h2{ margin-bottom:10px; font-size:1.8em; text-align: center; }
-h3{ margin:45px 0 10px; font-size:1.6em; text-align: center;}
-h4{ font-size: 1.4em; text-align: center;}
-td{font-size: 12px;}
 .info>div>p{ font-size: 1.1em;}
 .container>.info_t>p{text-align: center; font-size: 1.2em;}
 .container>.info_t>p>span{font-size: 1.4em;}
 .container>.info_t .s{ font-size:12px; }
-strong{color:#fff; font-size:1.5em; text-align: center;}
 .cont2>.container>ul>li>a>span>p{font-size: 1.2em; color:#fff;}
 
 
 /*---------------- header - 메인메뉴 ------------------*/
+
 header{ 
   position:relative;
   width:100%;
@@ -54,8 +56,9 @@ header{
     display: block; 
     height: 60px;
     text-indent:-9999px;
-    background-image:url(../images/logo_top.png);
+    background-image:url(../images/logo_top2.png);
     background-repeat:no-repeat; 
+    cursor:pointer;
 }
   .main_bar>nav{
     position:absolute;
@@ -69,6 +72,7 @@ header{
 }
   .main_bar>nav>ul>li>a{ 
     display:block;
+    color:#fff;
 }
 
 /*---------------- header - 서브메뉴 ------------------*/
@@ -83,10 +87,10 @@ header{
 .main_bar .sub_menu>li>a{ 
   display: block;
   height:40px; 
-  color:black;
+  color:#fff;
 }
 .main_bar .sub_menu>li:hover>a{
-  color:#fff;
+  color:#d1c1b1;
 }
 
 .sub_bg{
@@ -97,7 +101,8 @@ header{
   width:100%;
   height:170px; 
   z-index:10;
-  background-color:#fff; 
+  background-color:rgba(0,0,0,0.9);
+/*  background-color:#fff; */
   opacity:0.3;
 }
 
@@ -455,6 +460,7 @@ td{
   border-right:none;
   margin-right:0;
 }
+
 .container>.info_t{
   float:left;
   width:778px; 
@@ -462,12 +468,13 @@ td{
   border-radius: 40px 0 40px 0;
 }
 .container>.info_t>h4{
-  padding:20px 30px 10px;
+  padding:20px 0 10px;
   text-align:left;  
+  text-indent:80px;
 }
 
 .container>.info_t>p{
-  padding-left:30px;
+  padding-left:80px;
   text-align:left;
 }
 

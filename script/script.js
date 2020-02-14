@@ -25,7 +25,7 @@ $(document).ready(function(){
       $(".center_info").css({width:0,height:0,opacity:0});
       $(".bg").css({width:0,height:0}); 
       $(".port_btn").css({top:"50%",opacity:"1"})
-      $(".port_tab").css({top:"50%",opacity:"1"})
+//      $(".port_tab>.portalltab").css({top:"50%",opacity:"1"})
     });
 
     $(".m_btn>.right").click(function(){
