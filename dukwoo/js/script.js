@@ -47,7 +47,7 @@ $(document).ready(function(){
      $(".btn").hide();
      $(".fr").css({right:"-100%"})
    }
-   if($(window).width()<1230){
+   if($(window).width()<960){
      $(".btn").show();
      $(".fr").css({right:"-100%"})
    }

@@ -301,8 +301,8 @@ transition:all 2s ease-in-out;
 
 .keyword>.keyicon{
   width:80%; 
-  height:95%;
-  margin:2% auto 0; 
+  height:90%;
+  margin:3.5% auto 0; 
 }
 
 .keyword>.keyicon>li{
@@ -376,31 +376,18 @@ transition:all 2s ease-in-out;
 
 .portfolio{
   position: relative; 
-  width:100%; 
   background-color:#38618f;
 }
-
-/*
-.portfolio>h1{ 
-  position: absolute;
-  bottom:10px;
-  right:40px; 
-  color:#fff; 
-  font-style: italic;
-  font-size:100px; 
-  font-weight:bold; 
-}
-*/
 
   .port_btn{ 
     position: absolute;
     left:50px;
     top:60%;
     transform:translateY(-50%); 
-    width:400px;
+    width:450px;
     opacity:0; 
     transition-duration:1.5s; 
-    border-right:3px solid #fff;
+    border-right:4px solid #fff;
 }
 
   .port_btn>div>h2{ 
@@ -433,62 +420,39 @@ transition:all 2s ease-in-out;
 
   .other_btn>.hoom>a>img{ width:49px; height:49px; }  
 
+/* 탭부분 */
+
+
+.port_tab>.portalltab>div{ 
+    display:none;
+    position: absolute;
+    top:100px;
+    outline:2px solid #fff;
+    left:50%;
+    transform: translateX(-50%); 
+    background-repeat:no-repeat; 
+}
+  .port_tab>.portalltab>.andez{
+    display:block;
+}
+  .port_tab>.portalltab>.blue{
+    font-size:30px;
+    text-align: center; 
+    line-height:530px;
+}
+
   .port_tab>.portalltab>.other_tab{
     position: absolute;
     left:50%; 
     transform:translateX(-50%);
 }
 
-  .port_tab>.portalltab{ 
-    position: absolute;
-    top:10%;
-    left:25%;
-    width:50%;
-    height:50%;
-}    
-/*
-    position:absolute;
-    top:50%;
-    right:0;
-   width: 100%; height: 100%;
-    opacity:1;
-    transition-duration:1.5s; 
-    outline:2px solid red;
-    transform:translate(-50%,-50%);
-*/
-}
-                         
-
-/*
-  .port_tab>.portalltab>div{ 
-    display:none;
-    position: absolute;
-    left:50%;
-    transform: translateX(-50%); 
-    background-repeat:no-repeat; 
-*/
-}
-
-
-
-/*
-  .port_tab>.portalltab>div>img{
-   width: 800px;
-   margin:0 auto;
-}
-*/
-  .port_tab>.portalltab>.andez{ display:block; }
-  .port_tab>.portalltab>.blue{
-    font-size:30px;
-    text-align: center; 
-    line-height:530px; }
-
-
 
 /*tab 안에 있는 글씨*/
+
 .txt{
   position: absolute;
-            top:0%; 
+            top:30%; 
     right:-30%;
 }
   .txt>p{  outline:2px solid orange;
@@ -503,10 +467,12 @@ transition:all 2s ease-in-out;
   .txt>p>.st{ 
     font-size: 18px;}
   .txt>p>span{font-size:16px;}
+*/
 
 
 /*view, pro 버튼*/
 
+/*
 .preview{ 
   position: absolute; left:67%; bottom:0; 
   transform:translateX(-50%);
@@ -539,6 +505,10 @@ transition:all 2s ease-in-out;
   position: absolute;
   top: 0;
 }
+*/
+
+
+
 /*-------------강아지 마우스------------*/
 #box{
   position: fixed; left:50%; top:50%; 
