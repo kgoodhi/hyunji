@@ -43,7 +43,7 @@ header{
 }
   .main_bar{
     position: relative;
-      overflow:inherit;
+    overflow:inherit;
     padding:10px 0;
 }
   .main_bar>h1{ 
@@ -111,7 +111,6 @@ header{
   height: 680px;
   margin-top:-80px;
   z-index:20;
-  background-color: red;
 }
 .main_bg>h1{
   position: absolute;
@@ -135,7 +134,7 @@ header{
   display:none; 
   position:absolute; 
   right:30px; 
-  top:30px;
+  top:20px;
   z-index:50; 
   width:30px; 
   height:30px; 
@@ -149,7 +148,7 @@ header{
 
 /*------------ 모바일용 닫기 버튼 --------------*/
 
-#close{
+.close{
   display: none; 
   position: absolute;
   right:30px; 
@@ -157,7 +156,7 @@ header{
   z-index:50;
   cursor:pointer;
 }
-#close>i{ 
+.close>i{ 
   color: #fff;
   font-size:30px;
 }
@@ -329,6 +328,7 @@ td{
   float:left;
   width: 31.33%;
   height:400px;
+  background-repeat:no-repeat;
 }
 
 .cont2>.container>ul>li:nth-child(1){
@@ -348,8 +348,7 @@ td{
   width: 100%;
   height: 100%;
   text-align: center;
-  transition:0.5s;
-  
+  transition:0.5s;  
 }
 .cont2>.container>ul>li>a:hover{
   background-color:rgba(0,0,0,0.5);
@@ -381,7 +380,6 @@ td{
 
 
 /*---------------- 완공사진 ------------------*/
-
 .cont3>.container>ul{
   position: relative;
   width:400%;
@@ -443,17 +441,8 @@ td{
 /*---------------- 고객지원 ------------------*/
 
 .cont4>div>div{ 
-  /* 여기 .cont4 div 이거를 .cont4>div>div 이렇게 고쳤어 이렇게 안하면 cotainer 클레스명 갖고 있는 div까지 효과를 같이 먹어서 자손으로 하면 안돼..*/
-/*  position: relative; 얘는 .info_qc>div 여기만 필요한거 같아서 따로 .. */
   height:240px;
-/*  margin-right:10px; 이거는 여기 대신 info_q 여기에 한번에.. */
-  
 }
-.cont4>div>div:last-child{ /* 여기도 위에랑 똑같이 고쳤어 */
-  border-right:none;
-  margin-right:0;
-}
-
 .container>.info_t{
   float:left;
   width: 60%;
@@ -478,8 +467,12 @@ td{
   float:left;
   width: 19%;
   margin: 0 1%;
-  background-color:#e9e3dd; 
-  border-radius:0 40px 0 40px;
+  background-color:#e9e3dd;
+}
+.container>.info_qc>.info_c{
+  float:left;
+  width: 19%;
+  background-color: #d1c1b1; 
 }
 
 .container>.info_qc>div{
@@ -494,16 +487,8 @@ td{
   margin-left:-36px;
   width:69px;
 }
-
 .infoqctext{
   margin-top:55%;
-}
-.container>.info_qc>.info_c{
-  float:left;
-  width: 19%;
-/*  width:240px;*/
-  background-color: #d1c1b1;  
-  border-radius:0 40px 0 40px;  
 }
 
  
@@ -515,114 +500,165 @@ footer{
 
 footer>.container{
   position: relative;
-/*
-  width: 1280px; 
-  이건 위에 컨테이너 공통 줬으니까 뺐어
-*/
   height:120px;  
 }
 footer img{
+  position: absolute;
+  top:30px;
+  left:0px;
   width: 118px;
   height: 60px;
-  margin-top:30px;  
-  text-align:left;
 }
 
 footer address{
-  display: inline-block;
-  margin:30px 30%;
-  text-align:center;}
-  
-footer .qr>img{
+  width:500px;
   position: absolute;
-  right:0;
-  top:0px;
-  width: 60px;
-  height: 60px;
+  left:50%;
+  top:30px;
+  transform: translateX(-50%);
+  text-align: center;
 }
+
 
 /*----------------------------- mediaQuery -------------------------------*/
 
 /*1025px - 1279px*/
 @media screen and (max-width:1279px){
-  .container{width: 98%;}
-  
-/*  nav>ul{ padding:0 40px; }*/
-  
+.container{width: 98%;}
+
 /* 회사소개 */
-.info>div{ /* width:24%; */ height:300px; }
-/*
-  .info>.in_1{ width:48%; }
-  .info>.in_6{ width:48%; }
-  여기는 이렇게 width값 줄이지말고 위에 .container로 아예 조절!! 
-*/
-  .info>.in_6>a{ float:right; margin:50px 40px 0 0px; }
-  
-/* 사업소개 */ 
-/*
-  .cont2>.container{width: 100%;} 이렇게 적으면 위에서도 잡아먹혀서 (컨테이너가..) 그래서 제외
-  .cont2>.container>ul>li:nth-child(2){ margin:0 1%; }
-  .cont2>.container>ul>li{ width: 32.33%; }
-  얘네는 워차피 위에랑 공통이니까
-*/
-
-/* 완공사진 */
-/*  .cont3>.container{width:100%;} 이렇게 적으면 위에서도 잡아먹혀 컨테이너.. */
-
-/* 고객지원 */ 
-  
-/*
-위에서 %로 바꿔서 일단 주석처리 해놨어
-.container>.info_t{
-  width:768px; 
-}
-.container>.info_qc>.info_q{
-  width:225px;
-}
-.container>.info_qc>.info_c{
-  width:225px;
-}
-*/
-  
-/* footer */
-  
-/*
-footer>.container{
-  width: 100%;
-  }
-*/
-  
-/*footer .qr>img{ right:30px; 컨테이너 width값 조절함서 필요없어진거 같아서.. }*/
-  
+.info>div{ height:290px; }
+.info>.in_6>a{ margin:50px 45px 0 0px; }   
   
 } /* 1279px 끝 */
 
 
-
-
-
-
-
-
-
-
-
-
 /*961px - 1024px 태블릿*/
-@media screen and(max-width:1024px){
-
-}
+@media screen and (max-width:1024px){
+  body{font-size: 12px;}
+  
+  /* 메인 */
+  .main_bar>nav{ display:none; }
+  .main_bg{ height:500px; }
+  
+  /* 완공사진 */
+  .cont3>.container>ul>li{ height:400px; } 
+   
+} /* 1024px 끝*/
 
 /*769px - 960px 태블릿*/
-@media screen and(max-width:960px){
+@media screen and (max-width:960px){
+   h4{ font-size: 1.3em; }
+  
+  /* 메인 */
+  .main_bg{height:400px;}
+  
+  /* 회사소개 */
+  .info>div{width: 33.33%; height:270px;}
+  .go{bottom:18%; padding:5px;}
+  .info>.in_1{width: 66.666%;}  
+  .info>.in_2{background-color:#e9e3dd; background-image:none;} 
+  .info>.in_3{background-color:#9e624c;}
+  .info>.in_4{background-color:#d1c1b1;}
+  .info>.in_5{background-image:none;}
+  .info>.in_6{width: 100%;}
+  .info>.in_6>h3{
+    display: block;
+    height:10px;
+    margin:20px 0 0px ; 
+    padding: 0;
+  }
+  .info>.in_6>a{ margin:0 55px 15px 0; }
+  
+  /* 완공사진 */
+  .cont3>.container>ul>li{ height:300px; }
+  
+  /* 고객지원 */
+  .cont4>div>div{ height:200px;}
+  .container>.info_t>h4{text-indent:40px;}
+  .container>.info_t>p{padding-left:40px;}
+  .container>.info_qc>div{height: 200px; border-radius:0;}
+  .container>.info_qc>div>a>img{ top:30px; width:59px; }
+  .infoqctext{margin-top:65%;} 
+  
+  /* footer */
+  footer{margin-top:80px;}
 
-}  
+}/* 960px 끝 */
+  
 
 
 /*601px - 768px 모바일용*/
-@media screen and(max-width:768px){
+@media screen and (max-width:768px){
+  
+  .con{ margin:50px auto 0; }
+  
+  h1{font-size:1.7em;}
+  h2{font-size:1.6em;}
+  h3{font-size:1.4em;}
+  td{font-size:10px; }
+  th>a{font-size:11px;}
+  address{font-size:11px;}
+  
+  /* 메인 */
+  .main_bg{height:260px;}
+  .main_bg>h1{top:20%;}
+  .main_bar>h1>a{background-image:url(../images/logo_mb.png);}
+  
+  /* 회사소개 */
+  .info>div{width:50%; height:220px;}
+  .info>.in_1{width:100%;}  
+  
+  /* 사업소개 */
+ .cont2>.container>ul>li{
+  float:inherit;
+  width:100%;
+  height:200px;
+  background-size:cover;  
+  } 
+  .cont2>.container>ul>li:nth-child(2){margin:0;}
+  
+  /* 완공사진 */
+  .cont3>.container>ul>li{ height:180px; }  
+  .cont3>.container>ul>li>a>p{
+  height:40px;
+  line-height:40px;
+}
+  .dot{width:105px;}
+  .dot>li{width:15px;height:15px;}
+  .dot>li.onn{width:15px; height:15px;}
+  
+  /* 고객지원 */
+  .container>.info_t{width: 100%; height: 200px; }
+  .container>.info_t>h4{
+    padding:15px 0 10px;
+    text-align:center;  
+    text-indent:0;}
 
+  .container>.info_t>p{padding-left:0; text-align:center;}
+  .container>.info_qc>.info_q{width:50%; margin: 0%;}
+  .container>.info_qc>.info_c{width:50%; background-color:#59665c;}
+  .container>.info_qc>div{ height:150px;}
+  .container>.info_qc>div>a>img{
+  top:20px;
+  margin-left:-29px;
+  width:58px;
+}
+  .infoqctext{ margin-top:35%;}
+   
+  /* footer */
+footer{  margin-top:60px; }
+
+footer>.container{ height:200px; }
+footer img{
+  top:15px;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+footer address{
+  top:80px;
 }  
   
 /*481px - 600px 모바일용*/
-@media screen and(max-width:600px){}  
+@media screen and (max-width:600px){}

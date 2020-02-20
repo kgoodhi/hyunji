@@ -25,11 +25,11 @@ $(document).ready(function(){
  //햄버거
   $(".btn").on("click",function(){
     $(this).hide();
-    $("#close").show();
+    $(".close").show();
     $("nav").stop().animate({right:"0"})
   });
 
-    $("#close").on("click",function(){
+    $(".close").on("click",function(){
     $(this).hide();
     $(".btn").show();
     $("nav").stop().animate({right:"-100%"})

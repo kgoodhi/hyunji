@@ -381,10 +381,10 @@ transition:all 2s ease-in-out;
 
   .port_btn{ 
     position: absolute;
-    left:50px;
+    left:45px;
     top:60%;
     transform:translateY(-50%); 
-    width:450px;
+    width:400px;
     opacity:0; 
     transition-duration:1.5s; 
     border-right:4px solid #fff;
@@ -421,8 +421,19 @@ transition:all 2s ease-in-out;
   .other_btn>.hoom>a>img{ width:49px; height:49px; }  
 
 /* 탭부분 */
+.port_tab{
+  position: relative;
+  left:50%;
+  transform:translateX(-50%);
+  width:700px;
+}
+.portalltab{
 
+  outline:4px solid green;
+  height:300px;
+}
 
+/*
 .port_tab>.portalltab>div{ 
     display:none;
     position: absolute;
@@ -445,6 +456,7 @@ transition:all 2s ease-in-out;
     position: absolute;
     left:50%; 
     transform:translateX(-50%);
+*/
 }
 
 
