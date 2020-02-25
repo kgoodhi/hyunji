@@ -18,38 +18,41 @@ $(document).ready(function(){
   });
 
   $(window).on("load",function(){
-  $(".main_bg>img").css({transform:"scale(1.0)"});
+  $(".main_bg>h1").stop().animate({
+    top:"28%",opacity:"1"},800,function(){
+  $(".main_bg>img").css({transform:"scale(1.0)"});    
+    });
   });
+  
   
   
  //햄버거
   $(".btn").on("click",function(){
     $(this).hide();
     $(".close").show();
-    $("nav").stop().animate({right:"0"})
+    $(".fr").stop().animate({right:"0"})
   });
 
     $(".close").on("click",function(){
     $(this).hide();
     $(".btn").show();
-    $("nav").stop().animate({right:"-100%"})
+    $(".fr").stop().animate({right:"-80%"})
   });
   
 //모바일용 메뉴
   $(".fr>ul>li>a").on("click",function(){
-    $(this).parent().siblings().find(".sub_menu").hide();
-    $(this).siblings().toggle();
+    $(".sub_menu").stop().slideUp();
+    $(this).siblings().stop().slideToggle();
     $(this).children().toggleClass("on");
   });
   
  $(window).resize(function(){
    if($(window).width()>=1024){
+//     $(".main_bar").show();
      $(".btn").hide();
-     $(".fr").css({right:"-100%"})
-   }
-   if($(window).width()<960){
+     $(".fr").css({right:"-80%"});
+   }else{
      $(".btn").show();
-     $(".fr").css({right:"-100%"})
    }
  });
   
@@ -71,16 +74,16 @@ $(document).ready(function(){
  
   //완공사진 슬라이드
   
-  var $ul=$(".cont3>.container>ul");
-  var $ulw=$(".cont3>.container>ul").width()/4;
+  var $ul=$(".cont3>.container>div>ul");
+  var $ulw=$(".cont3>.container>div>ul").width()/4;
   
   $(window).resize(function(){
-      var $ulw=$(".cont3>.container>ul").width()/4;
+      var $ulw=$(".cont3>.container>div>ul").width()/4;
   });  
   
   $(".dot>li").on("click",function(){
     var i=$(".dot>li").index(this);
     $(this).addClass("onn").siblings().removeClass("onn");
-    $(".cont3>.container>ul").stop().animate({left:-$ulw*i});
+    $ul.stop().animate({left:-$ulw*i});
   });
 });
