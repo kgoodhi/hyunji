@@ -48,7 +48,6 @@ $(document).ready(function(){
   
  $(window).resize(function(){
    if($(window).width()>=1024){
-//     $(".main_bar").show();
      $(".btn").hide();
      $(".fr").css({right:"-80%"});
    }else{
@@ -56,21 +55,6 @@ $(document).ready(function(){
    }
  });
   
-//  
-//  
-//  var $aUl=$('.apart_right>ul');
-//  var $aLiW=$('.apart_right>ul').width()/4;
-//  
-//  $(window).resize(function(){
-//    $aLiW=$('.apart_right>ul').width()/4;
-//  });
-//  
-//  $('.a_btn>button').on('click',function(){
-//    var idx=$('.a_btn>button').index(this);
-//    $(this).addClass('on').siblings().removeClass('on');
-//    $('.apart_right>ul').stop().animate({left:-$aLiW*idx});
-//  });
-//  
  
   //완공사진 슬라이드
   

@@ -49,12 +49,11 @@ body{font-family: 'Noto Serif', serif; font-size:16px; background-color: #f3eee3
   font-weight:bold; }
 
 #main_header>.gnb a{ padding:15px;}
+#main_header>.gnb>ul>li:hover>a{ color:#D59F9B;  }
 #main_header>.gnb>ul>li>a{
   color:#333;
   padding-bottom:2px; 
   transition:all 0.4s; }
-  .gnb>ul>li>a:hover { color:#D59F9B;  }
-  .gnb>ul>li>a:hover>span{border-bottom:1px solid #D59F9B;}
   .gnb>ul>li:nth-of-type(1){ 
     margin-bottom:38px; 
     letter-spacing:3px; }
@@ -157,14 +156,14 @@ body{font-family: 'Noto Serif', serif; font-size:16px; background-color: #f3eee3
 
 
 
-#wrap>.new>h2>img{ 
+.new>h2>img{ 
   margin:30px auto 18px;
   padding-top:30px; } 
 
   .new{clear:both;}
   .new>ul>li{
     width:274px;
-    margin-right:19px;
+    margin-right:19px; 
     float:left; }
   .new>ul>li:nth-of-type(3n){ margin-right:0px;}
 
@@ -174,29 +173,27 @@ body{font-family: 'Noto Serif', serif; font-size:16px; background-color: #f3eee3
 
 #wrap>section>ul{overflow:hidden;}
 
-.review{ width:760px; margin:0px auto;}
-.review>h2>img{ margin:30px auto 18px;}
-.review>ul>li{ float:left; margin:3px 3px 0 0;}
-.review>ul>li>a {display:block;}
-
-.review>ul>li>a>span {
-  display:block;
-  width:187px;
-  height:187px; 
-  overflow:hidden; }
+.review{width: 760px;}
+.review>h2>img{margin:30px auto 16px;}
+.review>ul{
+  overflow:hidden; 
+  width:798px; 
+  margin:0 auto;
+}
+.review>ul>li{float:left; padding:10px 0 10px 10px;}
 
 .review>ul>li>a img{ transform:scale(1); transition:all 0.4s;}
-.review>ul>li>a:hover img { transform:scale(1.2)}
+.review>ul>li>a:hover img { transform:scale(1.1)}
+
 
 .todaybanner>a>img{ padding:20px 0px 5px;}
 
 #main_footer{  
-  width:100%; 
-  border-top:1px solid #ccc; 
-  margin-top:40px; float:left; 
-  text-align:center; margin:20px; }
+  width:100%; height:180px;
+  border-top:1px solid #d59f9b; 
+  text-align:center;}
 
-#main_footer>address { margin:40px 0 15px 0; }
+#main_footer>address {padding-top:30px; }
 
 #main_footer>.footer_bottom { 
   width:90px; 
@@ -207,7 +204,7 @@ body{font-family: 'Noto Serif', serif; font-size:16px; background-color: #f3eee3
   float:left; 
   width:24px; 
   height:24px;
-  margin-left:5px;
+  margin:10px 5px 0 0;
   text-indent:-9999em; }
 
 #main_footer>.footer_bottom>ul>li:nth-child(1){
