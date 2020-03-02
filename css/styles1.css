@@ -8,7 +8,8 @@ img{border:none;}
 
 html,body{ 
   height: 100%; 
-  font-family:'Didact Gothic', 'Noto Sans KR',sans-serif; }
+  font-family:'Didact Gothic', 'Noto Sans KR',sans-serif; 
+  background-color:#edeae1;}
 #wrap{
   overflow:hidden;  
   width: 100%; 
@@ -34,112 +35,75 @@ hr{display:none;}
 
 /*------------------------ 메인 ----------------------------*/
 
-.main{ 
+.main{
   position: relative;
-  top:0; 
   z-index:700;
 }
-
-.main>h1{  
-  margin-top:19%;
-  color:#38618f; 
-  font-size:7.5em;
-  text-align: center;
-  text-shadow:4px 3px #ccc; 
-  font-style:italic; 
-  cursor:pointer;
-  animation:ani 3s 1; 
-}
-
-.main>.line{
-  position: absolute; 
-  top:25%;
-  width:100%;
-  height:49%; 
-}
-.main>.line>p{
-  position: absolute;
-  background-color:#c4c2b8;
-}
-
-.top{
-  top:0;
-  left:0; 
-  width:0%;  
-  height:30px;
-}
-
-.bottom{ 
-  bottom:0; 
-  right:0;
-  width:0%;
-  height:30px;
-}
-
-.center_info{ 
-  position: fixed; 
+.main>h1{
+  position: relative;
   left:50%;
-  top: 50%; 
-  margin-left:-400px; 
-  margin-top:-222px;
-  z-index:50;
-  opacity: 0;
-  width:800px; 
-  height:445px; 
-  transition:all 0.4s;
-  background-image: url(../images/contact.png);
+  top:50%;
+  transform:translate(-50%,-50%);
+  width:697px;
+  height: 530px;
+  text-indent:-9999px;
+  background-image: url(../images/main.png);
+}
+.main>h2{
+  position: absolute;
+  top:7%; left:50%;
+  transform:translateX(-50%);
+  width: 691px;
+  height: 68px;
+  text-indent:-9999px;
+  background-image: url(../images/h1.png);
   background-repeat:no-repeat;
 }
+.main>h3{
+  position: absolute;
+  left:23%;
+  top:16%;  
+  width: 54px;
+  height: 522px;
+  text-indent:-9999px;
+  background-image: url(../images/who.png);}
 
-.bg{ 
-  position:fixed; 
-  left: 0; 
-  top: 0; 
-  width:0;
-  height:0; 
-  background-color:rgba(0,0,0,0.5);
-}
+
+
 
 /*------------------------ 메인 버튼 --------------------------*/
-
 .m_btn{
-  font-style:italic; 
-  text-shadow:3px 3px #ccc;
+  position: relative;
+  text-indent:-9999px;
+  top:16%;
+  cursor:pointer;
 }
-
-.m_btn>p{
-  position: absolute; 
-  bottom:40px; 
-  z-index:800; }
-
-.m_btn>.left{ left:30px; }
-
-.m_btn>.center{ 
-  left:50%;
-  margin-left:-40px; 
-  color:#38618f;
-  font-size:40px;
-  font-style:normal;
-  text-shadow:none;
-  font-weight:bold;
-  cursor:pointer; }
-
-.m_btn>.center:hover{
-  color:#fd9735;
+.left{
+  position: absolute;
+  left:20px;
+  top:10px;
+  width:40px;
+  height:48px;
+  background-image:url(../images/left.png);
 }
-
-.m_btn>.right{ right:40px; }
-
-.m_btn>p>a{
-  color:#38618f; 
-  font-weight:800; 
-  line-height: 50px;
-  font-size:50px; 
+.center{
+  position: absolute;
+  left: 50%;
+  transform:translateX(-50%);
+  top:20px;
+  width:30px;
+  height:30px;
+  border-radius:50%;
+ background-color:#5e4bc1;
 }
-.m_btn>p:hover>a{
-  color:#fd9735;
+.right{
+    position: absolute;
+  right:20px;
+  top: 10px;
+  width: 40px; 
+  height: 48px;
+background-image: url(../images/right.png);
 }
-
 /*------------------------ about me --------------------------*/
 
 .aboutme{ 
@@ -153,14 +117,14 @@ hr{display:none;}
 .aboutme>.menubtn{
   position:absolute;
   top:50%; 
-  right:8%;
+  right:3%;
   width:30%; 
   transform: translateY(-50%);
 }
 
 .aboutme>.menubtn>.btn>p>a{
   display: block; 
-  color:#38618f; 
+  color:#5e4ac1; 
   font-size:70px; 
   font-weight:800;
   text-align:right;
@@ -168,7 +132,7 @@ hr{display:none;}
 }
 
 .aboutme>.menubtn>.btn>p.click>a,
-.aboutme>.menubtn>.btn>p>a:hover{ color:#fd9735; }
+.aboutme>.menubtn>.btn>p>a:hover{ color:#feb664; }
 .aboutme>.menubtn>.btn>.btn01>a{ font-size:90px; }
 .aboutme>.menubtn>.btn>p>a>img{ width:49px; height:49px; }
 
@@ -187,7 +151,7 @@ hr{display:none;}
   transform:translate(-50%,-50%); 
   width:900px;
   height:600px; 
-  border:15px solid #38618f;
+  border:15px solid #5e4ac1;
   z-index:100; 
 }
 
@@ -236,7 +200,7 @@ hr{display:none;}
   width:40%;
   height:65%;
   opacity:0;
-  background-color:#38618f;
+  background-color:#5e4ac1;
 } 
 
 #skills>.stick>h2{ text-indent:-9999px; }
@@ -267,7 +231,7 @@ hr{display:none;}
 #skills>.stick>.container>div>.progress>.bar{
  height:100%;
  width:0;
- background-color:#fd9735;
+ background-color:#8bd0d3;
 transition:all 2s ease-in-out;
 }
     
@@ -289,11 +253,11 @@ transition:all 2s ease-in-out;
   color:#fff;
   font-size:23px;
   text-align: center;
-  background-color:#38618f;
+  background-color:#5e4ac1;
 }
 
 .skill_text p{
-  font-size:16px;
+  font-size:15px;
   text-align: center;
 }
 
@@ -312,7 +276,7 @@ transition:all 2s ease-in-out;
   height:30%; 
   opacity:0; 
   margin:0 auto 26px;
-  background-color:#38618f;
+  background-color:#8bd0d3;
   border-radius:40px;
 }
 
