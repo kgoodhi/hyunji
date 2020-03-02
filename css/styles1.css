@@ -24,7 +24,8 @@ html,body{
 
 hr{display:none;}
 
-
+.clearfix{*zoom:1;}
+.clearfix:after{display:block; clear:both; content:'';}
 /*------------------------ 애니메이션 -----------------------*/
 /*
 
@@ -127,7 +128,7 @@ hr{display:none;}
 
 .aboutme>.menubtn>.btn>p>a{
   display: block; 
-  color:#5e4ac1; 
+  color:#fd9735; 
   font-size:70px; 
   font-weight:800;
   text-align:right;
@@ -135,7 +136,7 @@ hr{display:none;}
 }
 
 .aboutme>.menubtn>.btn>p.click>a,
-.aboutme>.menubtn>.btn>p>a:hover{ color:#feb664; }
+.aboutme>.menubtn>.btn>p>a:hover{ color:#ff6745; }
 .aboutme>.menubtn>.btn>.btn01>a{ font-size:90px; }
 .aboutme>.menubtn>.btn>p>a>img{ width:49px; height:49px; }
 
@@ -154,7 +155,7 @@ hr{display:none;}
   transform:translate(-50%,-50%); 
   width:900px;
   height:600px; 
-  border:15px solid #5e4ac1;
+  border:15px solid #107c10;
   z-index:100; 
 }
 
@@ -310,20 +311,32 @@ transition:all 2s ease-in-out;
 
 .portfolio{
   position: relative; 
-  background-color:#38618f;
+
 }
 
-  .port_btn{ 
-    position: absolute;
-    left:45px;
-    top:60%;
-    transform:translateY(-50%); 
-    width:400px;
-    opacity:0; 
-    transition-duration:1.5s; 
-    border-right:4px solid #fff;
+
+.port_btn>div>div>p{float:left;}
+.port_btn>div>h2, .port_btn>div>div{float:left}
+.port_menu>p{
+  margin-left:10px;
+}
+.port_menu>p>a{
+  display: block;
+  width:32px;
+  height:32px;
+  
+  text-indent:-9999px;
+
+}
+.port_menu>p:first-child{background-image:url(../images/two.png);}
+.port_menu>p:nth-child(2){background-image:url(../images/two.png);}
+.port_menu>p:last-child{background-image:url(../images/two.png);}
+
+.other_btn>p{
+
 }
 
+/*
   .port_btn>div>h2{ 
     width:330px; 
     height:50px; 
@@ -351,42 +364,31 @@ transition:all 2s ease-in-out;
 }  
 
   .other_btn>.p_last{margin-bottom:35px;}
+*/
 
-  .other_btn>.hoom>a>img{ width:49px; height:49px; }  
+.hoom>a>img{ width:49px; height:49px; }  
 
 /* 탭부분 */
+
+
 .port_tab{
   position: relative;
-  left:50%;
-  transform:translateX(-50%);
-  width:700px;
+  left:0%;
+  top:50%;
+  transform:translateY(-50%);
+
+ outline:1px solid green;
+  height: 500px;
 }
 .portalltab{
-
-  outline:4px solid green;
-  height:300px;
-}
-
-/*tab 안에 있는 글씨*/
-
-.txt{
   position: absolute;
-            top:30%; 
-    right:-30%;
-}
-  .txt>p{  outline:2px solid orange;
-  
- 
-          display:block;
-          text-align: center; }
 
-  .txt>p>strong{ color:#5a3f4e;
-                 font-size:60px;
-                 text-shadow:2px 3px #b297a5; }
-  .txt>p>.st{ 
-    font-size: 18px;}
-  .txt>p>span{font-size:16px;}
-*/
+  width:500px;
+}
+
+
+;
+
 
 
 /*view, pro 버튼*/

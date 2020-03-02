@@ -110,7 +110,7 @@ $(document).ready(function(){
         $("#container").animate({marginLeft:"-100%"});
       });
     
-      $(".other_btn>.hoom").click(function(){
+      $(".hoom").click(function(){
         $("#container").animate({marginLeft:"-100%"});
       
       });
