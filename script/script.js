@@ -98,9 +98,6 @@ $(document).ready(function(){
         $btn2.parent().removeClass("click").eq(d).addClass("click");
         $('.tab').hide().eq(d).show();
       });
-  
-  //experience 슬라이드
-   
 
   
   
@@ -114,6 +111,9 @@ $(document).ready(function(){
       
       });
   
-
+$(".port_menu>p").mouseover(function(){
+    var i = $(this).index();
+    $(".port_menu>p").eq(i).find("img").attr("src", "images/on_"+(i+1)+".png");
+  });
   
 });//도큐먼트끝
