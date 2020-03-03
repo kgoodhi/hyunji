@@ -115,5 +115,18 @@ $(".port_menu>p").mouseover(function(){
     var i = $(this).index();
     $(".port_menu>p").eq(i).find("img").attr("src", "images/on_"+(i+1)+".png");
   });
+  $(".port_menu>p").mouseleave(function(){
+    var i = $(this).index();
+    $(".port_menu>p").eq(i).find("img").attr("src", "images/"+(i+1)+".png");
+  });
+  
+$(".other_menu>p").mouseover(function(){
+    var i = $(this).index();
+    $(".other_menu>p").eq(i).find("img").attr("src", "images/on_"+(i+1)+".png");
+  }); 
+$(".other_menu>p").mouseleave(function(){
+    var i = $(this).index();
+    $(".other_menu>p").eq(i).find("img").attr("src", "images/"+(i+1)+".png");
+});
   
 });//도큐먼트끝

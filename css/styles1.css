@@ -308,8 +308,7 @@ transition:all 2s ease-in-out;
 /*------------------------ portfolio --------------------------*/
 
 .portfolio{
-  position: relative; 
-  left: 0; top: 0;
+  position: relative;
   background-color:#093b61;
 }
 
@@ -317,7 +316,6 @@ transition:all 2s ease-in-out;
   position:absolute;
   top:50%;
   right:20%;
-  outline:2px solid red;
   z-index:100;
   color:#edeae1;
 }
@@ -326,36 +324,19 @@ transition:all 2s ease-in-out;
 .port_btn p{
   margin-left:10px;
 }
+
+.web_btn{
+  margin-bottom:10px;
+}
 .port_btn a{
   display: block;
   width:32px;
   height:32px; 
 }
-/*
-.port_menu{margin-bottom:15px;}
-.port_menu>p:first-child{background-image:url(../images/1.png);}
-.port_menu>p:nth-child(2){background-image:url(../images/2.png);}
-.port_menu>p:last-child{background-image:url(../images/3.png);}
-*/
-
-/*
-.port_menu>p:first-child:hover>a{background-image:url(../images/on_1.png);}
-.port_menu>p:nth-child(2):hover>a{background-image:url(../images/on_2.png);}
-.port_menu>p:last-child:hover>a{background-image:url(../images/on_3.png);}
-*/
 
 
-.other_menu>p:first-child{margin-left:44px;background-image:url(../images/1.png);}
-.other_menu>p:nth-child(2){background-image:url(../images/2.png);}
-.other_menu>p:last-child{background-image:url(../images/3.png);}
 
-/*
-.other_menu>p:first-child:hover>a{background-image:url(../images/on_1.png);}
-.other_menu>p:nth-child(2):hover>a{background-image:url(../images/on_2.png);}
-.other_menu>p:last-child:hover>a{background-image:url(../images/on_3.png);}
-*/
-
-
+.other_menu>p:first-child{margin-left:44px;}
 
 
 .hoom{position: absolute; top:52px; left:14%;}
@@ -364,7 +345,10 @@ transition:all 2s ease-in-out;
 
 /* 탭부분 */
 
-
+.tab{
+  display: none;
+}
+.andez{display: block;}
 .port_tab{
   position: relative;
   left:50%;
@@ -401,45 +385,6 @@ transition:all 2s ease-in-out;
 .txt>p{
   color:#edeae1;
 }
-
-
-/*view, pro 버튼*/
-
-/*
-.preview{ 
-  position: absolute; left:67%; bottom:0; 
-  transform:translateX(-50%);
-  font-weight:bold; 
-}
- 
-.tab>.preview p{ float:left; margin-right:60px; }
-.tab>.preview p:last-child{ margin-right:0; }
-
-.tab>.preview p>a{ 
-  display: block;
-  padding:5px;
-  color:#fff;
-  font-size:35px;                
-  text-align: center;
-  text-shadow:3px 3px #7e6873; 
-  transition-duration:0.5s; 
-  border:2px solid #fff;
-  border-radius:30px;}
-
-.tab>.preview p:hover>a{ color:#5a3f4e; transform:scale(1.2);}
-
-.tab>.preview p>a>i{font-size:40px;}
- 
-.caview, .baproc{
-  width: 200px;
-  text-align: center;}
-
-.baby img{
-  position: absolute;
-  top: 0;
-}
-*/
-
 
 
 /*-------------강아지 마우스------------*/
