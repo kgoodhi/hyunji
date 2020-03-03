@@ -309,21 +309,22 @@ transition:all 2s ease-in-out;
 
 .portfolio{
   position: relative;
+  height: 100%;
   background-color:#093b61;
 }
 
 .port_btn{
   position:absolute;
-  top:50%;
+  bottom:50px;
   right:20%;
+  height:75px;
   z-index:100;
   color:#edeae1;
+  outline:2px solid red;
 }
 .port_btn>div>div>p{float:left;}
 .port_btn>div>h2, .port_btn>div>div{float:left}
-.port_btn p{
-  margin-left:10px;
-}
+.port_btn p{margin-left:10px;}
 
 .web_btn{
   margin-bottom:10px;
@@ -333,9 +334,6 @@ transition:all 2s ease-in-out;
   width:32px;
   height:32px; 
 }
-
-
-
 .other_menu>p:first-child{margin-left:44px;}
 
 
@@ -345,31 +343,28 @@ transition:all 2s ease-in-out;
 
 /* 탭부분 */
 
-.tab{
-  display: none;
-}
+.tab{ display: none;} 
 .andez{display: block;}
 .port_tab{
   position: relative;
   left:50%;
   top:50%;
-  width:1400px;
+  width:1500px;
   transform:translate(-50%,-50%);
  outline:1px solid green;
   height:580px;
 }
 
-.portalltab img{
-  
+.portalltab img{  
   position: absolute;
+  left:0;
   top:50%;
   transform:translateY(-50%);
-
 }
 .txt{
   position: absolute;
   width:350px;
-  top:20%;
+  top:10%;
   right:10%;
   text-align:left;
   outline:2px solid #fff;
