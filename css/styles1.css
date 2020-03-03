@@ -35,48 +35,58 @@ hr{display:none;}
   z-index:700;
   background-color:#a3ab8d;
 }
-.main>h1{
-  position: relative;
+
+article{
+  position: absolute;
+  width:751px;
+  height:560px;
   left:50%;
   top:50%;
   transform:translate(-50%,-50%);
+}
+
+.main h1{
+  position: absolute;
+  bottom: 0; right: 0;
   width:697px;
-  height: 530px;
+  height:530px;
   text-indent:-9999px;
   background-image: url(../images/main.png);
 }
-.main>h2{
+.main h2{
   position: absolute;
-  top:10%;
-  left:50%;
-  transform:translateX(-50%);
+  top:-15px;
+  right:9px;
   width: 691px;
   height: 68px;
   text-indent:-9999px;
   background-image: url(../images/h1.png);
-  opacity:0;
+
   background-repeat:no-repeat;
 }
-.main>h3{
+.main h3{
   position: absolute;
-  left:30%;
-  top:16%;  
+  top:50px;
   width: 54px;
   height: 522px;
   text-indent:-9999px;
   background-repeat:no-repeat;
   background-image: url(../images/who.png);
-  opacity:0;
+
 }
 
 
 
 
 /*------------------------ 메인 버튼 --------------------------*/
+
 .m_btn{
-  position: relative;
+  position:absolute;
+  width: 100%;
+  height: 48px;
+  left: 0;
+  bottom:30px;
   text-indent:-9999px;
-  top:16%;
   cursor:pointer;
 }
 .left{
@@ -91,7 +101,7 @@ hr{display:none;}
   position: absolute;
   left: 50%;
   transform:translateX(-50%);
-  top:20px;
+  top:25px;
   width:30px;
   height:30px;
   border-radius:50%;
@@ -315,7 +325,7 @@ transition:all 2s ease-in-out;
 
 .port_btn{
   position:absolute;
-  bottom:50px;
+  bottom:150%;
   right:20%;
   height:75px;
   z-index:100;
@@ -351,7 +361,7 @@ transition:all 2s ease-in-out;
   top:50%;
   width:1500px;
   transform:translate(-50%,-50%);
- outline:1px solid green;
+   outline:1px solid green;
   height:580px;
 }
 
@@ -360,10 +370,11 @@ transition:all 2s ease-in-out;
   left:0;
   top:50%;
   transform:translateY(-50%);
+  outline:3px solid blue;
 }
 .txt{
   position: absolute;
-  width:350px;
+  width:400px;
   top:10%;
   right:10%;
   text-align:left;
@@ -372,12 +383,16 @@ transition:all 2s ease-in-out;
 
 
 .txt>p>strong{
-  font-size:50px;
-  
+  padding-bottom:50px;
+  font-size:50px;  
   color:#e3a857;
+  
 }
-
+.txt>p>.st{
+  font-size:14px;
+}
 .txt>p{
+  font-size:16px;
   color:#edeae1;
 }
 
