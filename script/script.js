@@ -1,9 +1,8 @@
 $(document).ready(function(){
-  //메인선
+
    $(window).load(function(){
-    $(".top").stop().animate({width:"100%"},1300,function(){
-        $(".bottom").stop().animate({width:"100%"},1000) 
-     });
+    $(".main>h2").animate({top:"7%",opacity:"1"},1000);
+    $(".main>h3").animate({left:"23%",opacity:"1"},1000);
 
     });
   

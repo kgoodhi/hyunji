@@ -9,7 +9,7 @@ img{border:none;}
 html,body{ 
   height: 100%; 
   font-family:'Didact Gothic', 'Noto Sans KR',sans-serif; 
-  background-color:#edeae1;}
+  }
 #wrap{
   overflow:hidden;  
   width: 100%; 
@@ -41,6 +41,7 @@ hr{display:none;}
 .main{
   position: relative;
   z-index:700;
+  background-color:#a3ab8d;
 }
 .main>h1{
   position: relative;
@@ -54,23 +55,27 @@ hr{display:none;}
 }
 .main>h2{
   position: absolute;
-  top:7%; left:50%;
+  top:10%;
+  left:50%;
   transform:translateX(-50%);
   width: 691px;
   height: 68px;
   text-indent:-9999px;
   background-image: url(../images/h1.png);
+  opacity:0;
   background-repeat:no-repeat;
 }
 .main>h3{
   position: absolute;
-  left:23%;
+  left:30%;
   top:16%;  
   width: 54px;
   height: 522px;
   text-indent:-9999px;
   background-repeat:no-repeat;
-  background-image: url(../images/who.png);}
+  background-image: url(../images/who.png);
+  opacity:0;
+}
 
 
 
@@ -98,7 +103,7 @@ hr{display:none;}
   width:30px;
   height:30px;
   border-radius:50%;
- background-color:#5e4bc1;
+ background-color:#093b61;
 }
 .right{
   position: absolute;
@@ -128,7 +133,7 @@ hr{display:none;}
 
 .aboutme>.menubtn>.btn>p>a{
   display: block; 
-  color:#fd9735; 
+  color:#839973;
   font-size:70px; 
   font-weight:800;
   text-align:right;
@@ -136,7 +141,7 @@ hr{display:none;}
 }
 
 .aboutme>.menubtn>.btn>p.click>a,
-.aboutme>.menubtn>.btn>p>a:hover{ color:#ff6745; }
+.aboutme>.menubtn>.btn>p>a:hover{ color:#5f3a42; }
 .aboutme>.menubtn>.btn>.btn01>a{ font-size:90px; }
 .aboutme>.menubtn>.btn>p>a>img{ width:49px; height:49px; }
 
@@ -155,7 +160,7 @@ hr{display:none;}
   transform:translate(-50%,-50%); 
   width:900px;
   height:600px; 
-  border:15px solid #107c10;
+  border:15px solid #839973;
   z-index:100; 
 }
 
@@ -204,7 +209,7 @@ hr{display:none;}
   width:40%;
   height:65%;
   opacity:0;
-  background-color:#5e4ac1;
+  background-color:#839973;
 } 
 
 #skills>.stick>h2{ text-indent:-9999px; }
@@ -235,7 +240,7 @@ hr{display:none;}
 #skills>.stick>.container>div>.progress>.bar{
  height:100%;
  width:0;
- background-color:#8bd0d3;
+ background-color:#e2b9b3;
 transition:all 2s ease-in-out;
 }
     
@@ -257,7 +262,7 @@ transition:all 2s ease-in-out;
   color:#fff;
   font-size:23px;
   text-align: center;
-  background-color:#5e4ac1;
+  background-color:#839973;
 }
 
 .skill_text p{
@@ -311,60 +316,38 @@ transition:all 2s ease-in-out;
 
 .portfolio{
   position: relative; 
-
+  left: 0; top: 0;
 }
 
-
+.port_btn{
+  position:absolute;
+  top:80%;
+  right:20%;
+  outline:2px solid red;
+  z-index:100;
+}
 .port_btn>div>div>p{float:left;}
 .port_btn>div>h2, .port_btn>div>div{float:left}
-.port_menu>p{
-  margin-left:10px;
+.port_btn p{
+  margin-left:5px;
 }
-.port_menu>p>a{
+.port_btn a{
   display: block;
   width:32px;
-  height:32px;
-  
+  height:32px;  
   text-indent:-9999px;
-
+  background-repeat:no-repeat;
 }
-.port_menu>p:first-child{background-image:url(../images/two.png);}
+.port_menu{margin-bottom:10px;}
+.port_menu>p:first-child{background-image:url(../images/one.png);}
 .port_menu>p:nth-child(2){background-image:url(../images/two.png);}
-.port_menu>p:last-child{background-image:url(../images/two.png);}
+.port_menu>p:last-child{background-image:url(../images/three.png);}
 
-.other_btn>p{
+.other_menu>p:first-child{margin-left:38px;background-image:url(../images/one.png);}
+.other_menu>p:nth-child(2){background-image:url(../images/two.png);}
+.other_menu>p:last-child{background-image:url(../images/three.png);}
 
-}
-
-/*
-  .port_btn>div>h2{ 
-    width:330px; 
-    height:50px; 
-    color:#fd9735;  
-    font-size:50px;
-    margin:20px auto 30px;
-    text-align: center;
-    cursor:pointer; 
-}
-  
-  .port_btn>div a{
-    display: block; 
-    color:#fff; 
-    font-size:35px;
-    font-weight:bold;
-    text-align:center;
-    margin-bottom:5px;
-}
-
-  .p>a{transition:0.5s;}
-
-  .p.click>a{ 
-    color:#ff6745;
-    transform:scale(1.1);
-}  
-
-  .other_btn>.p_last{margin-bottom:35px;}
-*/
+.hoom{position: absolute; top:52px; left:14%;}
 
 .hoom>a>img{ width:49px; height:49px; }  
 
@@ -373,21 +356,19 @@ transition:all 2s ease-in-out;
 
 .port_tab{
   position: relative;
-  left:0%;
+  left:4%;
   top:50%;
+  width:1400px;
   transform:translateY(-50%);
-
  outline:1px solid green;
-  height: 500px;
+  height:580px;
 }
-.portalltab{
+
+.txt{
   position: absolute;
-
-  width:500px;
+  top:20%;
+  right:10%;
 }
-
-
-;
 
 
 
