@@ -326,7 +326,14 @@ transition:all 2s ease-in-out;
 }
 
 /*------------------------ portfolio --------------------------*/
-
+#container>section>.allportf{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 1440px; 
+  height: 100%;
+}
 .portfolio{
   position: relative;
   height: 100%;
@@ -335,22 +342,21 @@ transition:all 2s ease-in-out;
 
 .port_btn{
   position:absolute;
-  top:20%;
-  right:0%;
+  top:65%;
+  right:10%;
   width:300px;
   height:75px;
   z-index:50;
   color:#edeae1;
-  outline:2px solid red;
 }
 .port_btn a{
   display: block;
   width:32px;
   height:32px; 
 }
-.port_btn>div>div>p{float:left;}
+.port_btn>div>div>p{float:left; margin-left:10px;}
 .port_btn>div>h2, .port_btn>div>div{float:left}
-.port_btn p{margin-left:10px;}
+
 
 .web_btn{margin-bottom:10px;}
 
@@ -373,10 +379,8 @@ transition:all 2s ease-in-out;
   width:1500px;
   transform:translate(-50%,-50%);
   height:650px;
-/*
-  border-top:3px solid #a8b293;
-  border-bottom:3px solid #a8b293;
-*/
+  border-top:5px dashed #e3a857;
+  border-bottom:5px dashed #e3a857;
 }
 
 .portalltab img{  
@@ -384,8 +388,18 @@ transition:all 2s ease-in-out;
   width:1000px;
   left:-2%;
   top:50%;
+  transform:translateY(-50%);  
+}
+
+.other_tab{
+  position: absolute;
+  left:10%;
+  top:50%;
   transform:translateY(-50%);
-  
+}
+.other_tab>div>img{
+  width:800px; 
+  height: 518px;
 }
 
 /* text 상자 */
@@ -401,22 +415,22 @@ transition:all 2s ease-in-out;
 }
 
 .txt>p>span{
-  font-size:14px;
+  font-size:16px;
   color:#edeae1;
 }
 .txt>p>strong{
   display: block;
-  font-size:60px;
+  font-size:70px;
   color:#e3a857;  
 }
 .txt>p>.st{
-  font-size:16px;
+  font-size:18px;
 }
 
 .preview{
   position: absolute;
   right:17%;
-  top:52%;
+  top:55%;
   z-index:40;
   }
 .preview>p{

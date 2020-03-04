@@ -23,7 +23,7 @@ $(document).ready(function(){
       $("#container").animate({marginLeft:"0"});
       $(".center_info").css({width:0,height:0,opacity:0});
       $(".bg").css({width:0,height:0}); 
-      $(".port_btn").css({top:"50%",opacity:"1"})
+//      $(".port_btn").css({top:"58%",opacity:"1"})
 //      $(".port_tab>.portalltab").css({top:"50%",opacity:"1"})
     });
 
