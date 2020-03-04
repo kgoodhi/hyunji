@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
    $(window).load(function(){
-    $(".main>h2").animate({top:"7%",opacity:"1"},1000);
-    $(".main>h3").animate({left:"23%",opacity:"1"},1000);
+    $(".main h2").animate({top:"-15px",opacity:"1"},1000);
+    $(".main h3").animate({left:"0px",opacity:"1"},1000);
 
     });
   
