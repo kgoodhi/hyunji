@@ -338,6 +338,10 @@ transition:all 2s ease-in-out;
   position: relative;
   height: 100%;
   background-color:#093b61;
+/*
+      border-top:5px dashed #e3a857;
+  border-bottom:5px dashed #e3a857;
+*/
 }
 
 .port_btn{
@@ -379,8 +383,6 @@ transition:all 2s ease-in-out;
   width:1500px;
   transform:translate(-50%,-50%);
   height:650px;
-  border-top:5px dashed #e3a857;
-  border-bottom:5px dashed #e3a857;
 }
 
 .portalltab img{  
@@ -391,25 +393,28 @@ transition:all 2s ease-in-out;
   transform:translateY(-50%);  
 }
 
+/*
 .other_tab{
   position: absolute;
   left:10%;
   top:50%;
   transform:translateY(-50%);
 }
+*/
 .other_tab>div>img{
   width:800px; 
-  height: 518px;
+  height:518px;
+  left:5%;
 }
 
 /* text 상자 */
 
 .txt{
   position: absolute;
-  width:400px;
+  width:700px;
   height:300px;
   top:10%;
-  right:3%;
+  right:-17%;
   padding:10px 30px;
   text-align:left;
 }
@@ -423,6 +428,7 @@ transition:all 2s ease-in-out;
   font-size:70px;
   color:#e3a857;  
 }
+
 .txt>p>.st{
   font-size:18px;
 }
@@ -457,6 +463,9 @@ transition:all 2s ease-in-out;
   width: 220px;
 }
 
+.wedding>.preview>p{
+  width: 220px;
+}
 
 
 
