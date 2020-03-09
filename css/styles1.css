@@ -143,13 +143,13 @@ hr{display:none;}
   position:absolute;
   top:50%; 
   right:3%;
-  width:800px; 
+  width:700px; 
   transform: translateY(-50%);
 }
 
 .aboutme .menubtn .btn>p>a{
   display: block; 
-  color:#839973;
+  color:#36374b;
   font-size:70px; 
   font-weight:800;
   text-align:right;
@@ -157,7 +157,7 @@ hr{display:none;}
 }
 
 .aboutme .menubtn>.btn>p.click>a,
-.aboutme .menubtn>.btn>p>a:hover{ color:#5f3a42; }
+.aboutme .menubtn>.btn>p>a:hover{ color:#e2b9b3; }
 .aboutme .menubtn>.btn>.btn01>a{ font-size:90px; }
 .aboutme .menubtn>.btn>p>a>img{ width:49px; height:49px; }
 
@@ -180,7 +180,7 @@ hr{display:none;}
   transform:translate(-50%,-50%);
   width:900px;
   height: 600px;
-  border:15px solid #839973;
+  border:15px solid #36374b;
   z-index:100; 
 }
 
@@ -229,7 +229,7 @@ hr{display:none;}
   width:40%;
   height:65%;
   opacity:0;
-  background-color:#839973;
+  background-color:#36374b;
 } 
 
 #skills>.stick>h2{ text-indent:-9999px; }
@@ -282,7 +282,7 @@ transition:all 2s ease-in-out;
   color:#fff;
   font-size:23px;
   text-align: center;
-  background-color:#839973;
+  background-color:#36374b;
 }
 
 .skill_text p{
@@ -305,13 +305,13 @@ transition:all 2s ease-in-out;
   height:30%; 
   opacity:0; 
   margin:0 auto 26px;
-  background-color:#8bd0d3;
+  background-color:#e2b9b3;
 }
 
 .keyword>.keyicon>li>img{
-  width: 100px;
-  height: 100px;
-  margin:30px 70px;
+  width: 120px;
+  height: 120px;
+  margin:20px 0 15px 55px;
 }
 .keyword>.keyicon>li>div{
   position: absolute;
@@ -321,12 +321,12 @@ transition:all 2s ease-in-out;
 }
 
 .keyword>.keyicon>li>div>h2{
-  color:#fff; 
-  font-size:18px;
+  color:#36374b; 
+  font-size:20px;
 }
 
 .keyicon>li>div>p{ 
-  color:#fff;
+  color:#36374b;
   font-size:14px;
 }
 
