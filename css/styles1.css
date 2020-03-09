@@ -80,6 +80,22 @@ hr{display:none;}
   opacity:0;
 }
 
+.center_info{
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  z-index:100;
+  background-image:url(../images/contact.png);
+}
+.bg{ 
+  position:fixed; 
+  left: 0; 
+  top: 0; 
+  width:0;
+  height:0; 
+  background-color:rgba(0,0,0,0.5); 
+}
 /*------------------------ 메인 버튼 --------------------------*/
 
 .m_btn{
@@ -149,7 +165,7 @@ hr{display:none;}
 
 .aboutme .menubtn .btn>p>a{
   display: block; 
-  color:#36374b;
+  color:#0a3d64;
   font-size:70px; 
   font-weight:800;
   text-align:right;
@@ -157,7 +173,7 @@ hr{display:none;}
 }
 
 .aboutme .menubtn>.btn>p.click>a,
-.aboutme .menubtn>.btn>p>a:hover{ color:#e2b9b3; }
+.aboutme .menubtn>.btn>p>a:hover{ color:#ddb0a7; }
 .aboutme .menubtn>.btn>.btn01>a{ font-size:90px; }
 .aboutme .menubtn>.btn>p>a>img{ width:49px; height:49px; }
 
@@ -180,7 +196,7 @@ hr{display:none;}
   transform:translate(-50%,-50%);
   width:900px;
   height: 600px;
-  border:15px solid #36374b;
+  border:15px solid #0a3d64;
   z-index:100; 
 }
 
@@ -192,27 +208,33 @@ hr{display:none;}
 
 /* 프로필 */
 
+.all_tab .profile{
+  background-color: #ddb0a7;
+}
 .all_tab .profile>h1{
-  width:620px;
-  height:318px; 
-  margin:30px auto; 
-  text-indent:-9999px;
-  background-image: url(../images/me.jpg);
-  text-align:left;
-}
-.all_tab .profile span{
-  display: block;
-  font-size:18px;
-  text-align:left;
-  margin-bottom:30px;
-}
+  position: absolute;
+  right:0px;
+  bottom:0px;
+  width:325px;
+  height:573px; 
 
+  text-indent:-9999px;
+  background-image: url(../images/meme.png);
+  background-size:cover;
+}
 .all_tab .profile>p{ 
   width: 620px;
-  margin:20px auto;
+  padding:15px 30px;
+  color:#0a3d64;
+  line-height:40px;
   font-size:14px;
+  
 }
 
+.profile>p>span{
+  font-size:18px;
+  font-weight:800;
+}
 
 /* 스킬 */
 
@@ -229,7 +251,7 @@ hr{display:none;}
   width:40%;
   height:65%;
   opacity:0;
-  background-color:#36374b;
+  background-color:#0a3d64;
 } 
 
 #skills>.stick>h2{ text-indent:-9999px; }
@@ -260,7 +282,7 @@ hr{display:none;}
 #skills>.stick>.container>div>.progress>.bar{
  height:100%;
  width:0;
- background-color:#e2b9b3;
+ background-color:#ddb0a7;
 transition:all 2s ease-in-out;
 }
     
@@ -282,7 +304,7 @@ transition:all 2s ease-in-out;
   color:#fff;
   font-size:23px;
   text-align: center;
-  background-color:#36374b;
+  background-color:#0a3d64;
 }
 
 .skill_text p{
@@ -305,7 +327,7 @@ transition:all 2s ease-in-out;
   height:30%; 
   opacity:0; 
   margin:0 auto 26px;
-  background-color:#e2b9b3;
+  background-color:#ddb0a7;
 }
 
 .keyword>.keyicon>li>img{
@@ -331,6 +353,7 @@ transition:all 2s ease-in-out;
 }
 
 /*------------------------ portfolio --------------------------*/
+
 #container>section>.allportf{
   position: absolute;
   left: 50%;
@@ -338,17 +361,24 @@ transition:all 2s ease-in-out;
   transform: translate(-50%,-50%);
   width: 1440px; 
   height: 100%;
+
 }
 .portfolio{
   position: relative;
   height: 100%;
   background-color:#093b61;
-/*
-      border-top:5px dashed #e3a857;
-  border-bottom:5px dashed #e3a857;
-*/
 }
 
+.line{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform:translate(-50%,-50%);
+  width:100%;
+  height:700px;
+  border-top:5px solid #eaad5a;
+  border-bottom:5px solid #eaad5a;
+}
 .port_btn{
   position:absolute;
   top:65%;
@@ -372,7 +402,7 @@ transition:all 2s ease-in-out;
 .other_menu>p:first-child{margin-left:44px;}
 
 
-.hoom{position: absolute; top:30px; right:10%;}
+.hoom{position: absolute; top:32px; right:6%;}
 
 .hoom>a>img{ width:49px; height:49px; }  
 
@@ -398,14 +428,6 @@ transition:all 2s ease-in-out;
   transform:translateY(-50%);  
 }
 
-/*
-.other_tab{
-  position: absolute;
-  left:10%;
-  top:50%;
-  transform:translateY(-50%);
-}
-*/
 .other_tab>div>img{
   width:800px; 
   height:518px;
@@ -468,7 +490,7 @@ transition:all 2s ease-in-out;
   width: 220px;
 }
 
-.wedding>.preview>p{
+.other_tab>.preview>p{
   width: 220px;
 }
 

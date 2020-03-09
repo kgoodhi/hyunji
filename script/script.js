@@ -23,8 +23,6 @@ $(document).ready(function(){
       $("#container").animate({marginLeft:"0"});
       $(".center_info").css({width:0,height:0,opacity:0});
       $(".bg").css({width:0,height:0}); 
-//      $(".port_btn").css({top:"58%",opacity:"1"})
-//      $(".port_tab>.portalltab").css({top:"50%",opacity:"1"})
     });
 
     $(".m_btn>.right").click(function(){
@@ -37,7 +35,7 @@ $(document).ready(function(){
     });
   
     $(".m_btn>.center").click(function(){
-      $(".center_info").css({width:"50%",height:"55%",opacity:"1"});
+      $(".center_info").css({width:"50%",height:"55%",opacity:"1"},1000);
       $(".bg").css({width:"100%",height:"100%"});
     });
 
@@ -99,8 +97,6 @@ $(document).ready(function(){
         $('.tab').hide().eq(d).show();
       });
 
-  
-  
   //home 버튼 누르면 main으로 이동
       $(".btn05").click(function(){
         $("#container").animate({marginLeft:"-100%"});
@@ -111,6 +107,7 @@ $(document).ready(function(){
       
       });
   
+  //포트폴리오 메뉴이동
 $(".port_menu>p").mouseover(function(){
     var i = $(this).index();
     $(".port_menu>p").eq(i).find("img").attr("src", "images/on_"+(i+1)+".png");
