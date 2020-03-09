@@ -32,7 +32,6 @@ hr{display:none;}
 .clearfix{*zoom:1;}
 .clearfix:after{display:block; clear:both; content:'';}
 
-
 /*------------------------ 메인 ----------------------------*/
 
 .main{
@@ -41,7 +40,7 @@ hr{display:none;}
   background-color:#a3ab8d;
 }
 
-article{
+.mainarticle{
   position: absolute;
   width:751px;
   height:560px;
@@ -126,14 +125,21 @@ article{
   overflow:hidden; 
   z-index:800; 
   background-color:#edeae1;
- 
 }
-.tabcont{}
-.all_tab{position: relative; left:50%; width:100%; outline:2px solid red; height: 100%;}
+
+.aboutarticle{
+  position: absolute;
+  width: 1440px;
+  height: 700px;
+  left: 50%;
+  top: 50%;
+  transform:translate(-50%,-50%);
+}
+.all_tab{position: relative; left:50%; width:100%; height: 100%;}
 
 /* 메뉴 탭 */
 
-.aboutme>.menubtn{
+.aboutme .menubtn{
   position:absolute;
   top:50%; 
   right:3%;
@@ -141,7 +147,7 @@ article{
   transform: translateY(-50%);
 }
 
-.aboutme>.menubtn>.btn>p>a{
+.aboutme .menubtn .btn>p>a{
   display: block; 
   color:#839973;
   font-size:70px; 
@@ -150,36 +156,35 @@ article{
   text-shadow:3px 3px #ccc;
 }
 
-.aboutme>.menubtn>.btn>p.click>a,
-.aboutme>.menubtn>.btn>p>a:hover{ color:#5f3a42; }
-.aboutme>.menubtn>.btn>.btn01>a{ font-size:90px; }
-.aboutme>.menubtn>.btn>p>a>img{ width:49px; height:49px; }
+.aboutme .menubtn>.btn>p.click>a,
+.aboutme .menubtn>.btn>p>a:hover{ color:#5f3a42; }
+.aboutme .menubtn>.btn>.btn01>a{ font-size:90px; }
+.aboutme .menubtn>.btn>p>a>img{ width:49px; height:49px; }
 
 /* 내용 탭부분 */
 
 
-.aboutme>.tabcont{ 
+.aboutme .tabcont{ 
   position: relative; 
-  width:1000px; 
+  width:900px; 
   height:700px;
-  outline:2px solid blue;
-  left:50px;
+  left:40px;
   top:50%;
   transform:translateY(-50%);
 }
 
-.aboutme>.tabcont>.all_tab{ 
+.aboutme .all_tab{ 
   position: absolute; 
-  left:55%;
-  top:50%;
-  transform:translate(-50%,-50%); 
+  left: 50%;
+  top: 50%;
+  transform:translate(-50%,-50%);
   width:900px;
-  height:600px; 
+  height: 600px;
   border:15px solid #839973;
   z-index:100; 
 }
 
-.aboutme>.tabcont>.all_tab>div{
+.aboutme .all_tab>div{
   display:none; 
   width: 100%;
   height: 100%;
@@ -187,7 +192,7 @@ article{
 
 /* 프로필 */
 
-.all_tab>.profile>h1{
+.all_tab .profile>h1{
   width:620px;
   height:318px; 
   margin:30px auto; 
@@ -195,14 +200,14 @@ article{
   background-image: url(../images/me.jpg);
   text-align:left;
 }
-.all_tab>.profile span{
+.all_tab .profile span{
   display: block;
   font-size:18px;
   text-align:left;
   margin-bottom:30px;
 }
 
-.all_tab>.profile>p{ 
+.all_tab .profile>p{ 
   width: 620px;
   margin:20px auto;
   font-size:14px;

@@ -58,7 +58,7 @@ $(document).ready(function(){
      }); 
   
   //about me 탭 누르면 내용 나오기
-   var $btn=$(".aboutme>.menubtn>.btn>p>a")
+   var $btn=$(".aboutme .btn>p>a")
   
       $btn.click(function(){
         var i=$btn.index(this);
