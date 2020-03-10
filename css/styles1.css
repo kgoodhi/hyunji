@@ -425,7 +425,7 @@ transition:all 2s ease-in-out;
   width:1000px;
   left:-2%;
   top:50%;
-  transform:translateY(-50%);  
+  transform:translateY(-50%); 
 }
 
 .other_tab>div>img{

@@ -126,4 +126,6 @@ $(".other_menu>p").mouseleave(function(){
     $(".other_menu>p").eq(i).find("img").attr("src", "images/"+(i+1)+".png");
 });
   
+
+  
 });//도큐먼트끝
