@@ -89,7 +89,7 @@ $(document).ready(function(){
   
   //Portfolio 탭 누르면 내용 나오기
 
-   var $btn2=$(".p>a")
+   var $btn2=$(".p")
   
       $btn2.click(function(){
         var d=$btn2.index(this);
@@ -108,23 +108,20 @@ $(document).ready(function(){
       });
   
   //포트폴리오 메뉴이동
-$(".port_menu>p").mouseover(function(){
-    var i = $(this).index();
-    $(".port_menu>p").eq(i).find("img").attr("src", "images/on_"+(i+1)+".png");
-  });
-  $(".port_menu>p").mouseleave(function(){
-    var i = $(this).index();
-    $(".port_menu>p").eq(i).find("img").attr("src", "images/"+(i+1)+".png");
-  });
-  
-$(".other_menu>p").mouseover(function(){
-    var i = $(this).index();
-    $(".other_menu>p").eq(i).find("img").attr("src", "images/on_"+(i+1)+".png");
-  }); 
-$(".other_menu>p").mouseleave(function(){
-    var i = $(this).index();
-    $(".other_menu>p").eq(i).find("img").attr("src", "images/"+(i+1)+".png");
+$(".port_menu>p").click(function(){
+  var i = $(this).index();
+  $(".port_menu>p").removeClass('on').eq(i).addClass('on');
 });
+
+  
+//$(".other_menu>p").mouseover(function(){
+//    var i = $(this).index();
+//    $(".other_menu>p").eq(i).find("img").attr("src", "images/on_"+(i+1)+".png");
+//  }); 
+//$(".port_menu>p").mouseleave(function(){
+//    var i = $(this).index();
+//     $(".port_menu>p").eq(i).find("img").attr("src", "images/"+(i+1)+".png");
+//});
   
 
   

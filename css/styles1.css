@@ -387,13 +387,27 @@ transition:all 2s ease-in-out;
   height:75px;
   z-index:50;
   color:#edeae1;
+  cursor:pointer;
 }
-.port_btn a{
-  display: block;
-  width:32px;
-  height:32px; 
+
+.port_btn>div>div>p{
+  float:left; 
+  width:35px;
+  height:35px; 
+  margin-left:10px;
+  color:#edeae1;
+  font-size:24px;
+  font-weight:800;
+  background-color: #eaad5a;
+  border-radius:10px;
+  text-align: center;
 }
-.port_btn>div>div>p{float:left; margin-left:10px;}
+
+.port_btn>div>div>p:hover,
+.port_btn>div>div>p.on{
+  background-color:#df8053;
+}
+
 .port_btn>div>h2, .port_btn>div>div{float:left}
 
 
@@ -402,9 +416,9 @@ transition:all 2s ease-in-out;
 .other_menu>p:first-child{margin-left:44px;}
 
 
-.hoom{position: absolute; top:32px; right:6%;}
+.hoom{position: absolute; top:42px; right:5%;}
 
-.hoom>a>img{ width:49px; height:49px; }  
+.hoom>a>img{ width:39px; height:39px; }  
 
 /* 탭부분 */
 
