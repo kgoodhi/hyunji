@@ -35,7 +35,7 @@ $(document).ready(function(){
     });
   
     $(".m_btn>.center").click(function(){
-      $(".center_info").css({width:"50%",height:"55%",opacity:"1"},1000);
+      $(".center_info").css({width:"50%",height:"50%",opacity:"1"},1000);
       $(".bg").css({width:"100%",height:"100%"});
     });
 
@@ -63,8 +63,8 @@ $(document).ready(function(){
         $btn.parent().removeClass("click").eq(i).addClass("click");
         
         $(".tab1").hide().eq(i).show();
-        if($('.btn03').hasClass('click')){ //if 랑 붙어져 있으면 hasClass 가지고있으면,
-          $('.keyword>.keyicon>li').stop().animate({bottom:'0',opacity:1},1000);
+        if($('.btn03').hasClass('click')){        
+        $('.keyword>.keyicon>li').stop().animate({bottom:'0',opacity:1},1000);
         }else{
           $('.keyword>.keyicon>li').css({bottom:'-20%',opacity:0});
         }
@@ -87,13 +87,13 @@ $(document).ready(function(){
         }
       }); 
   
-  //Portfolio 탭 누르면 내용 나오기
+  //포트폴리오 누르면 내용 나오기
 
    var $btn2=$(".p")
   
       $btn2.click(function(){
         var d=$btn2.index(this);
-        $btn2.parent().removeClass("click").eq(d).addClass("click");
+        $btn2.parent().removeClass("on").eq(d).addClass("on");
         $('.tab').hide().eq(d).show();
       });
 
@@ -108,21 +108,20 @@ $(document).ready(function(){
       });
   
   //포트폴리오 메뉴이동
+  
 $(".port_menu>p").click(function(){
   var i = $(this).index();
-  $(".port_menu>p").removeClass('on').eq(i).addClass('on');
+  $(".p").removeClass('on');
+  $(".port_menu>p").eq(i).addClass('on');
 });
-
   
-//$(".other_menu>p").mouseover(function(){
-//    var i = $(this).index();
-//    $(".other_menu>p").eq(i).find("img").attr("src", "images/on_"+(i+1)+".png");
-//  }); 
-//$(".port_menu>p").mouseleave(function(){
-//    var i = $(this).index();
-//     $(".port_menu>p").eq(i).find("img").attr("src", "images/"+(i+1)+".png");
-//});
+$(".other_menu>p").click(function(){
+  var i = $(this).index();
+  $(".p").removeClass('on');
+  $(".other_menu>p").eq(i).addClass('on');
+});
   
-
+  
+  
   
 });//도큐먼트끝

@@ -82,11 +82,14 @@ hr{display:none;}
 
 .center_info{
   position: absolute;
+  width:770px;
   left: 50%;
   top:50%;
   transform:translate(-50%,-50%);
   z-index:100;
   background-image:url(../images/contact.png);
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 .bg{ 
   position:fixed; 
@@ -172,7 +175,7 @@ hr{display:none;}
   text-shadow:3px 3px #ccc;
 }
 
-.aboutme .menubtn>.btn>p.click>a,
+
 .aboutme .menubtn>.btn>p>a:hover{ color:#ddb0a7; }
 .aboutme .menubtn>.btn>.btn01>a{ font-size:90px; }
 .aboutme .menubtn>.btn>p>a>img{ width:49px; height:49px; }
@@ -381,7 +384,7 @@ transition:all 2s ease-in-out;
 }
 .port_btn{
   position:absolute;
-  top:65%;
+  top:67%;
   right:10%;
   width:300px;
   height:75px;
@@ -428,7 +431,7 @@ transition:all 2s ease-in-out;
 .port_tab{
   position: relative;
   left:50%;
-  top:50%;
+  top:50%을
   width:1500px;
   transform:translate(-50%,-50%);
   height:650px;
@@ -436,14 +439,14 @@ transition:all 2s ease-in-out;
 
 .portalltab img{  
   position: absolute;
-  width:1000px;
-  left:-2%;
+  width:900px;
+  left:3%;
   top:50%;
   transform:translateY(-50%); 
 }
 
 .other_tab>div>img{
-  width:800px; 
+  width:800px;
   height:518px;
   left:5%;
 }
