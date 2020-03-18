@@ -431,7 +431,7 @@ transition:all 2s ease-in-out;
 .port_tab{
   position: relative;
   left:50%;
-  top:50%을
+  top:50%;
   width:1500px;
   transform:translate(-50%,-50%);
   height:650px;
