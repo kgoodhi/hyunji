@@ -6,7 +6,7 @@ $(document).ready(function(){
 
     });
   
-     //마우스 강아지
+  //마우스 강아지
     $(window).mousemove(function(a){
       var xx=a.pageX;
       var yy=a.pageY;
@@ -16,6 +16,27 @@ $(document).ready(function(){
       $("#box").css({left:xx+15,top:yy+15});
 
     });
+  
+  
+  //로딩화면 애니큐빅
+    $(".loading>p").fadeOut();
+    $(".loading").delay(4500).slideUp(1000, function () {        
+    });
+  
+  var f=0;  
+  var $txt_move = $('.loading>.loadtext>p');  
+  var loading_intervalKey;
+
+ loading_intervalKey = setInterval(function () {
+  if(f<3){
+     f++;
+     $txt_move.eq(f).addClass('on');
+ 
+    }else{
+     $txt_move.eq(0).addClass('on');
+    }
+},800);
+
   
   
   //페이지 전환  
