@@ -77,7 +77,7 @@ function mainSlide2(){
      var ii = $(this).index();
   $(".new li").eq(ii).find('img').attr('src',"new/nimg" + (ii+1) + ".jpg");
   });
-  
+
   
   
 });

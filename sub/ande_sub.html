@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title>앙데뷰 쇼핑몰</title>
+  
+  <!--------------- CSS 연결 ----------------->
+  <link rel="stylesheet" href="../andezvous/ande_styles.css">
+
+  <!--------------- JS 연결 ----------------->
+  <script src="js/jquery-1.12.4.js"></script>
+  <script src="js/function.js"></script>
+  
+  <!--------------- font 연결 ----------------->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
+  
+  <style>
+    h1{text-align:center;}
+    .best_sub{
+      position: relative;
+      width: 860px; 
+      height:525px;
+      overflow: hidden;
+    } 
+    .best_sub>div>ul{position: absolute; width: 1520px; }
+    .best_sub>div>ul>li{float:left; margin:15px 0px 0 30px;}
+    .best_sub>div>ul>li:nth-child(1){margin-left:65px;}
+    .best_sub>div>ul>li img{
+      width:350px; height:421px;
+    }
+    .best_font>span{margin-left:135px; color:crimson;}
+    
+    /*--------------- weekly ---------------*/
+  .sub_item>ul>li{ 
+    width:272px; 
+    margin-right:22px; 
+    float:left; 
+}
+ .sub_item>ul>li:nth-of-type(3n){ 
+   margin-right:0px;
+}
+ .sub_item>ul>li>figure>figcaption{
+   margin:10px 0 10px;
+   text-align:center; 
+}
+    figure img{width: 272px; height: 316px;}
+    
+    .col{position: absolute; left: 50%; transform:translateX(-50%);}
+    .pagination{margin-top:85px;}
+    .pagination>li{float: left; height: 210px; padding:10px;}
+    .pagination>li>a{font-weight:bold; font-size:12px;} 
+
+    
+    #main_footer{  
+  margin-top:130px;
+}
+  </style>
+ </head>
+ <body>
+   <header id="main_header">
+     <h1><a href="../andezvous/andezvous2.html">andezvous</a></h1>
+	 <nav class="gnb"> 
+	     <ul>
+			 <li><a href="#">NEW!</a></li>
+			 <li><a href="#">Earrings</a>
+			 <li><a href="#">Bracelet</a></li>
+			 <li><a href="#">Anklet</a></li>
+			 <li><a href="#">Earcuff</a></li>
+			 <li><a href="#">14k gold</a></li>
+			 <li><a href="#">About</a></li>
+			 <li><a href="#">LookBook</a></li>
+		 </ul>	 
+	 </nav>
+   </header>
+ <nav class="gnb2">
+	 <ul>
+	     <li><a href="#"><span>Login</span></a></li>
+	     <li><a href="#"><span>Join</span></a></li>
+	     <li><a href="#"><span>My page</span></a></li>
+	     <li><a href="#"><span>Notice</span></a></li>
+	     <li><a href="#"><span>Q&amp;a</span></a></li>
+	     <li>
+		 <a href="#"><img src="../andezvous/images/shopping-cart.png" alt="카트"></a>
+		 </li>
+	     <li>
+		 <a href="#top"><img src="../andezvous/images/chevron-arrow-up.png" alt="위로"></a>
+		 </li>
+	     <li>
+		<div class="sch"><input type="text" id="search" name="search" size="13"> </div>
+		 </li>
+	 </ul>
+ </nav>
+<div id="wrap">
+    <section class="best_sub">
+      <div>
+        <h1>BEST</h1>
+        <ul class="autoplay clearfix">
+           <li>
+              <a href="#"><img src="../andezvous/sub_photo/best_1.jpg" alt=""></a>
+              <p class="best_font">Tangle earring(2color)<span>BEST</span></p>
+              <p>19,000</p>
+            </li>
+        
+            <li>
+              <a href="#"><img src="../andezvous/sub_photo/best_2.jpg" alt=""></a>
+              <p class="best_font">Tangle earring(2color)<span>BEST</span></p>
+              <p>19,000</p>
+           </li>
+            <li>
+              <a href="#"><img src="../andezvous/sub_photo/best_3.jpg" alt=""></a>
+              <p class="best_font">Tangle earring(2color)<span>BEST</span></p>
+              <p>19,000</p>
+           </li>
+            <li>
+              <a href="#"><img src="../andezvous/sub_photo/best_4.jpg" alt=""></a>
+              <p class="best_font">Tangle earring(2color)<span>BEST</span></p>
+              <p>19,000</p>
+           </li>           
+         </ul>
+      </div>
+    </section>
+     <section class="sub_item">
+ 		 <ul>
+			 <li>
+				  <figure>
+					 <a href="#"><img src="../andezvous/sub_photo/sub_1.jpg" alt="weekly/wimg1_1.jpg"></a>
+					 <figcaption>
+				 		  <p>Shine bracelet &#40;2color&#41;</p>
+						 <p><span>19,000</span></p>
+				     </figcaption>
+			      </figure>
+			 </li>
+			 <li>
+				 <figure>
+					 <a href="#"><img src="../andezvous/sub_photo/sub_2.jpg" alt="weekly/wimg2_1.jpg"></a>
+					 <figcaption>
+						 <p>Crown necklace &#40;2color&#41;</p>
+						 <p><span>36,000</span></p>
+					 </figcaption>
+				 </figure>
+			 </li>
+			 <li>
+				 <figure>
+					 <a href="#"><img src="../andezvous/sub_photo/sub_3.jpg" alt="weekly/wimg3_1.jpg"></a>
+					 <figcaption>
+						 <p>Triple earring &#40;2color&#41;</p>
+						 <p><span>27,000</span></p>
+					 </figcaption>	
+				 </figure>
+			 </li>
+	         <li>
+				 <figure>
+					 <a href="#"><img src="../andezvous/sub_photo/sub_1.jpg" alt="weekly/wimg4_1.jpg"></a>
+					 <figcaption>
+				 		 <p>Mild ring &#40;2color&#41;</p>
+						 <p><span>8,000</span></p>
+				     </figcaption>
+				 </figure>
+			 </li>
+			 <li>
+				 <figure>	
+					 <a href="#"><img src="../andezvous/sub_photo/sub_1.jpg" alt="weekly/wimg5_1.jpg"></a>
+					 <figcaption>
+				 		 <p>Vintage coin necklace</p>
+						 <p><span>31,000</span></p>
+                     </figcaption>
+			     </figure>
+		     </li>
+			 <li>
+				 <figure>
+					 <a href="#"><img src="../andezvous/sub_photo/sub_1.jpg" alt="weekly/wimg6_1.jpg"></a>
+					 <figcaption>
+				 		 <p>Mill earring</p>
+						 <p><span>11,000</span></p>
+					 </figcaption>
+				 </figure>
+			 </li>
+			 <li>
+		 		 <figure>
+					 <a href="#"><img src="../andezvous/sub_photo/sub_1.jpg" alt="new/nimg1_1.jpg"></a>
+					 <figcaption>
+						 <p>Sia pearl earring</p>
+						 <p><span>24,000</span></p>
+					 </figcaption>
+				 </figure>
+			 </li>
+			 <li>
+		 		 <figure>
+					 <a href="#"><img src="../andezvous/sub_photo/sub_1.jpg" alt="new/nimg2_1.jpg"></a>
+					 <figcaption>
+						 <p>Frank anklet</p>
+						 <p><span>22,000</span></p>
+					 </figcaption>
+				 </figure>
+			 </li>
+			 <li>
+		 		 <figure>
+					 <a href="#"><img src="../andezvous/sub_photo/sub_1.jpg" alt="new/nimg3_1.jpg"></a>
+					 <figcaption>
+						 <p>Green onyx necklace</p>
+						 <p><span>20,000</span></p>	
+					 </figcaption>
+				 </figure>
+			 </li>
+			 <li>
+		 		 <figure>
+					 <a href="#"><img src="../andezvous/sub_photo/sub_1.jpg" alt="new/nimg4_1.jpg"></a>
+					 <figcaption>
+						 <p>Pebble necklace</p>
+						 <p><span>38,000</span></p>
+					 </figcaption>
+				 </figure>
+			 </li>
+			 <li>
+		 		 <figure>
+					 <a href="#"><img src="../andezvous/sub_photo/sub_1.jpg" alt="new/nimg5_1.jpg"></a>
+				     <figcaption>
+						 <p>heart chain necklace</p>
+						 <p><span>43,000</span></p>
+					 </figcaption>
+				 </figure>
+			 </li>
+			 <li>
+		 		 <figure>
+					 <a href="#"><img src="../andezvous/sub_photo/sub_1.jpg" alt="new/nimg6_1.jpg"></a>
+					 <figcaption>
+						 <p>Gloss coin necklace &#40;2color&#41;</p>
+						 <p><span>29,000</span></p>
+					 </figcaption>
+				 </figure>
+			 </li>
+			 <li>
+		 		 <figure>
+					 <a href="#"><img src="../andezvous/sub_photo/sub_1.jpg" alt="new/nimg7_1.jpg"></a>
+					 <figcaption>
+						 <p>Irregular ring</p>
+						 <p><span>11,000</span></p>
+					 </figcaption>
+					 </figure>
+			 </li>
+			 <li>
+		 		 <figure>
+					 <a href="#"><img src="../andezvous/sub_photo/sub_1.jpg" alt="new/nimg8_1.jpg"></a>
+					 <figcaption>
+						 <p>Peony earring &#40;2color&#41;</p>
+						 <p><span>9,500</span></p>
+					 </figcaption>
+				 </figure>
+			 </li>
+			 <li>
+		 		 <figure>
+					 <a href="#"><img src="../andezvous/sub_photo/sub_1.jpg" alt="new/nimg9_1.jpg"></a>
+					 <figcaption>
+						 <p>Our heart necklace</p>
+						 <p><span>24,000</span></p>
+					 </figcaption>					 
+				 </figure>
+			 </li>
+	     </ul>
+	       <div class="col">
+	        <ul class="clearfix pagination">
+	           <li><a href="#">Prev</a></li>
+	           <li><a href="#">1</a></li>
+	           <li><a href="#">2</a></li>
+	           <li><a href="#">3</a></li>
+	           <li><a href="#">4</a></li>
+	           <li><a href="#">Next</a></li>
+	       </ul>
+	     </div>
+	 </section>
+	 <footer id="main_footer">
+	 <address>
+		 <p>EMAIL : ANDEZVOUS@GMAIL.COM / 02-383-6106 (OPEN 11:00~18:00, LUNCH 12:00~13:00, SAT/SUN/HOLIDAY OFF)</p>
+		 <p>ADDRESS : 2F, 205, SEOOREUNG-RO 88, EUNPYEONG-GU, SEOUL, KOREA </p>
+		 <p>BUSINESS LICENSE : 202-59-00259 / ONLINE LICENSE : 2017-SEOUL EUNPYEONG-0764</p>
+		 <br />
+		 <p>개인 포트폴리오로 해당 기업과는 관련없음을 알려드립니다.</p>
+	 </address>
+	 <div class="footer_bottom">
+		 <ul>
+		   <li><a href="http://www.facebook.com">페이스북</a></li>
+		   <li><a href="https://www.instagram.com/">인스타그램</a></li>
+		   <li><a href="https://www.youtube.com/">유튜브</a></li>
+		 </ul>
+	 </div>
+</footer>
+   </div>
+</body>
+</html>

@@ -2,7 +2,7 @@
 
  *{margin:0px; padding:0px; }
  ul,ol,li{ list-style:none;}
- a{ text-decoration:none; }
+ a{ text-decoration:none; color:#555;}
  address { font-style:normal; }
  img{ border:0px; display:block; margin:0px; padding:0px; }
 
@@ -48,7 +48,7 @@ body{font-family: 'Noto Serif', serif; font-size:16px; background-color: #f3eee3
   margin-top:10px;
 }
 .gnb .sub>ul>li:hover>a{
-  color:#b970b6;
+  color:#D59F9B;
 }
 
 .gnb>ul {
