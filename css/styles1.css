@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 /*------------------------ Reset --------------------------*/
+
 *{padding: 0; margin: 0;}
 ul,ol,li{list-style:none;}
 a{text-decoration:none;}
@@ -31,7 +32,6 @@ hr{display:none;}
 
 .clearfix{*zoom:1;}
 .clearfix:after{display:block; clear:both; content:'';}
-
 
 /*----------------- 로딩화면 -----------------*/
 
@@ -219,7 +219,6 @@ hr{display:none;}
 
 /* 내용 탭부분 */
 
-
 .aboutme .tabcont{ 
   position: relative; 
   width:900px; 
@@ -392,7 +391,7 @@ transition:all 2s ease-in-out;
   font-size:14px;
 }
 
-/*------------------------ portfolio --------------------------*/
+/*------------------------ 포트폴리오 --------------------------*/
 
 #container>section>.allportf{
   position: absolute;
@@ -464,7 +463,6 @@ transition:all 2s ease-in-out;
 
 .tab{ display: none;} 
 .dukwoo{display: block;}
-
 .port_tab{
   position: relative;
   left:50%;
@@ -473,7 +471,6 @@ transition:all 2s ease-in-out;
   transform:translate(-50%,-50%);
   height:650px;
 }
-
 .portalltab img{  
   position: absolute;
   width:900px;
@@ -481,7 +478,6 @@ transition:all 2s ease-in-out;
   top:50%;
   transform:translateY(-50%); 
 }
-
 .other_tab>div>img{
   width:800px;
   height:518px;
@@ -509,17 +505,15 @@ transition:all 2s ease-in-out;
   font-size:70px;
   color:#e3a857;  
 }
-
 .txt>p>.st{
   font-size:18px;
 }
-
 .preview{
   position: absolute;
   right:17%;
   top:55%;
   z-index:40;
-  }
+}
 .preview>p{
   float:left;
   width: 100px;
@@ -535,7 +529,6 @@ transition:all 2s ease-in-out;
   text-align: center;
   color:#093b61;
 }
-
 .preview>p:hover>a{
   background-color:#df8053;
 }
@@ -548,23 +541,16 @@ transition:all 2s ease-in-out;
   width: 220px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /*-------------강아지 마우스------------*/
 #box{
-  position: fixed; left:50%; top:50%; 
-  width:100px; height:70px; 
+  position: fixed; 
+  left:50%; 
+  top:50%; 
+  width:100px; 
+  height:70px; 
   z-index:1000; 
-  background-image:url(../images/muru.png); }
+  background-image:url(../images/muru.png); 
+}
 
 
 

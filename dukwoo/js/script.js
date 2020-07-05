@@ -7,7 +7,7 @@ $(document).ready(function(){
   var $sub=$(".main_bar .sub_menu");
   var $bg=$(".sub_bg");
   
-    //메인메뉴
+  //메인메뉴
   $mainmnu.on("mouseover",function(){
     $sub.stop().fadeIn(200);
     $bg.stop().fadeIn();
@@ -24,8 +24,7 @@ $(document).ready(function(){
     });
   });
   
-  
-  
+    
  //햄버거
   $(".btn").on("click",function(){
     $(this).hide();
@@ -56,8 +55,7 @@ $(document).ready(function(){
  });
   
  
-  //완공사진 슬라이드
-  
+//완공사진 슬라이드  
   var $ul=$(".cont3>.container>div>ul");
   var $ulw=$(".cont3>.container>div>ul").width()/4;
   
