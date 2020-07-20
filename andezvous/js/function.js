@@ -79,7 +79,15 @@ function mainSlide2(){
   });
 
   
-  
+ $(".sub_item li").mouseover(function(){
+     var ii = $(this).index();
+    $(".sub_item li").eq(ii).find("img").attr("src","../andezvous/sub_photo/sub" + (ii+1) + "_1.jpg");
+ });
+ 
+ $(".sub_item li").mouseleave(function(){
+    var ii = $(this).index();
+   $(".sub_item li").eq(ii).find("img").attr("src","../andezvous/sub_photo/sub" + (ii+1) + ".jpg");
+ });
 });
 
 

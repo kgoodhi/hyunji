@@ -60,7 +60,7 @@ $(document).ready(function(){
   var $ulw=$(".cont3>.container>div>ul").width()/4;
   
   $(window).resize(function(){
-      var $ulw=$(".cont3>.container>div>ul").width()/4;
+   var $ulw=$(".cont3>.container>div>ul").width()/4;
   });  
   
   $(".dot>li").on("click",function(){
